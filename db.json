@@ -1,0 +1,337 @@
+{
+    "products":[
+         {
+      "id": 1,
+      "name": "Gold Necklace",
+      "price": 199,
+      "category": "necklace",
+      "image": "IMG-1.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         
+      "id": 2,
+      "name": "Gold Necklace",
+      "price": 259,
+      "category": "necklace",
+      "image": "IMG-2.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 3,
+      "name": "Gold Necklace",
+      "price": 299,
+      "category": "necklace",
+      "image": "IMG-3.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 4,
+      "name": "Gold Necklace",
+      "price": 199,
+      "category": "necklace",
+      "image": "IMG-7.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 5,
+      "name": "Gold Necklace",
+      "price": 399,
+      "category": "necklace",
+      "image": "IMG-5.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 6,
+      "name": "Gold Necklace",
+      "price": 170,
+      "category": "necklace",
+      "image": "IMG-6.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 7,
+      "name": "Gold Necklace",
+      "price": 179,
+      "category": "necklace",
+      "image": "IMG-7.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 8,
+      "name": "Gold Necklace",
+      "price": 349,
+      "category": "necklace",
+      "image": "IMG_8.HEIC",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 9,
+      "name": "Gold Necklace",
+      "price": 299,
+      "category": "necklace",
+      "image": "IMG-9.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 10,
+      "name": "Gold Necklace",
+      "price": 188,
+      "category": "necklace",
+      "image": "IMG-10.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+
+    },
+    {
+         "id": 11,
+      "name": "Gold Necklace",
+      "price": 299,
+      "category": "necklace",
+      "image": "IMG-11.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 12,
+      "name": "Gold Necklace",
+      "price": 399,
+      "category": "necklace",
+      "image": "IMG-12.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 13,
+      "name": "Gold Necklace",
+      "price": 169,
+      "category": "necklace",
+      "image": "IMG-13.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 14,
+      "name": "Gold Necklace",
+      "price": 155,
+      "category": "necklace",
+      "image": "IMG-14.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 15,
+      "name": "Gold Necklace",
+      "price": 189,
+      "category": "necklace",
+      "image": "IMG-15.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 16,
+      "name": "Gold Necklace",
+      "price": 199,
+      "category": "necklace",
+      "image": "IMG-16.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 17,
+      "name": "Gold Necklace",
+      "price": 199,
+      "category": "necklace",
+      "image": "IMG-17.PNG",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 18,
+      "name": "Gold Necklace",
+      "price": 189,
+      "category": "necklace",
+      "image": "IMG-18.PNG",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 19,
+      "name": "Gold Necklace",
+      "price": 169,
+      "category": "necklace",
+      "image": "IMG-19.PNG",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+         "id": 20,
+      "name": "Gold Necklace",
+      "price": 179,
+      "category": "necklace",
+      "image": "IMG-20.PNG",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    }
+    
+    
+    ],
+    "categories":[
+      {
+        "id":1,
+        "name":"Necklace",
+         "key": "necklace",
+      "icon": "💍",
+      "desc": "Timeless gold pieces",
+       "link": "/shop/necklace"
+      
+      
+      },
+       {
+        "id":2,
+        "name":"Earrings",
+         "key": "earrings",
+         "icon": "✨",
+         "desc": "Statement designs",
+          "link": "/shop/earrings"
+      },
+       {
+        "id":3,
+        "name":"Bangles",
+         "key": "bangles",
+         "icon": "💛",
+         "desc": "Traditional charm",
+          "link": "/shop/bangles"
+      },
+       {
+        "id":4,
+        "name":"Bracelets",
+         "key": "bracelets",
+      "icon": "🌟",
+      "desc": "Elegant wraps",
+       "link": "/shop/bracelets"
+      },
+       {
+        "id":5,
+        "name":"Rings",
+         "key": "rings",
+      "icon": "💍",
+      "desc": "Forever pieces",
+       "link": "/shop/rings"
+      },
+       {
+        "id":6,
+        "name":"Anklets",
+         "key": "anklets",
+      "icon": "🌸",
+      "desc": "Delicate beauty",
+       "link": "/shop/necklace"
+      }
+    ],
+    "product":[
+      {"id": 1,
+      "name": "Gold Necklace",
+      "category": "necklace",
+      "price": 199,
+      "oldPrice": 250,
+      "image": "IMG_21.PNG",
+      "rating": 4,
+      "reviews": 120,
+      "isNew": true,
+      "discount": 20
+      },
+      {"id": 2,
+      "name": "Gold Necklace",
+      "category": "necklace",
+      "price": 199,
+      "oldPrice": 250,
+      "image": "IMG-16.JPG.jpeg",
+      "rating": 4,
+      "reviews": 120,
+      "isNew": true,
+      "discount": 20
+   },
+   {
+      "id": 3,
+      "name": "Gold Necklace",
+      "category": "necklace",
+      "price": 199,
+      "oldPrice": 250,
+      "image": "IMG-15.JPG.jpeg",
+      "rating": 4,
+      "reviews": 120,
+      "isNew": true,
+      "discount": 20
+   },
+   {
+      "id": 4,
+      "name": "Gold Necklace",
+      "category": "necklace",
+      "price": 199,
+      "oldPrice": 250,
+      "image": "IMG-13.JPG.jpeg",
+      "rating": 4,
+      "reviews": 120,
+      "isNew": true,
+      "discount": 20
+   },
+   {
+      "id": 5,
+      "name": "Gold Necklace",
+      "category": "necklace",
+      "price": 199,
+      "oldPrice": 250,
+      "image": "IMG-11.JPG.jpeg",
+      "rating": 4,
+      "reviews": 120,
+      "isNew": true,
+      "discount": 20
+   },
+   {
+      "id": 6,
+      "name": "Gold Necklace",
+      "category": "necklace",
+      "price": 199,
+      "oldPrice": 250,
+      "image": "IMG-10.JPG.jpeg",
+      "rating": 4,
+      "reviews": 120,
+      "isNew": true,
+      "discount": 20
+   },
+   {
+      "id": 7,
+      "name": "Gold Necklace",
+      "category": "necklace",
+      "price": 199,
+      "oldPrice": 250,
+      "image": "IMG-5.JPG.jpeg",
+      "rating": 4,
+      "reviews": 120,
+      "isNew": true,
+      "discount": 20
+   },
+   {
+      "id": 8,
+      "name": "Gold Necklace",
+      "category": "necklace",
+      "price": 199,
+      "oldPrice": 250,
+      "image": "IMG-4.JPG.jpeg",
+      "rating": 4,
+      "reviews": 120,
+      "isNew": true,
+      "discount": 20
+   }
+    ]
+
+}
