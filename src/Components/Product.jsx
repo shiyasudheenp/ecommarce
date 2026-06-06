@@ -1,27 +1,3 @@
-// import axios from 'axios'
-// import React, { useEffect, useState } from 'react'
-
-// function Product() {
-//   let[items,setItems]=useState([])
-//   useEffect(()=>{
-//     axios.get("http://localhost:4000/product")
-//     .then((res)=>setItems(res.data));
-//   })
-
-//   return (<>
-//   <div>
-//     {items && items.slice(0,4).map((d)=>(
-//     <div key={d.id}>
-//       <img src={d.image} alt="" />
-//     </div>
-//     ))}
-//   </div>
-  
-//   </>    
-//   )
-// }
-
-// export default Product;
 
 
 import { useEffect, useState } from "react";

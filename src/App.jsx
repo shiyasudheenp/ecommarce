@@ -11,6 +11,10 @@ import Products from "./Pages/Products"
 import ProductsDetails from "./Pages/ProductsDetails"
 import Categories from "./Components/Categories"
 import CategoryPage from "./Pages/CategoryPage"
+import Login from "./Pages/Login"
+import Register from "./Pages/Register"
+import Dashboard from "./Pages/Dashboard"
+
 
 
 export default function App(){
@@ -18,7 +22,10 @@ export default function App(){
     <BrowserRouter>
     <Navbar/>
     <Routes>
-      <Route path="/" element={<Home/>}/>
+      <Route path="/" element={<Login/>}/>
+      <Route path="/register" element={<Register/>}/>
+      <Route path="/Dashboard" element={<Dashboard/>}/>
+      <Route path="/home" element={<Home/>}/>
       <Route path="/" element={<Categories/>}/>
       <Route path="/shop/:category" element={<CategoryPage/>}/>
       <Route path="/Shop" element={<Shop/>}/>

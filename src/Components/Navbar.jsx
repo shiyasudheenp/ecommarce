@@ -31,6 +31,8 @@
 
 import { Link } from "react-router-dom"
 import Logo1 from "../assets/Logo1.png"
+import { FaHeart } from "react-icons/fa";
+import { GiShoppingCart } from "react-icons/gi";
 
 function Navbar() {
   return (
@@ -76,9 +78,27 @@ function Navbar() {
           </li>
         </ul>
 
+        {/* Right side icons */}
+
+        <div className="flex items-center gap-5 mr-5">
+          {/* serch */}
+          <button>🔍</button>
+          
+          {/* wishlist */}
+          <FaHeart className="text-xl hover:text-yellow-600" />
+          {/* cart */}
+          <GiShoppingCart className="relative text-xl hover:text-yellow-600" />
+          {/* sign in */}
+          <Link to="/register">
+          <button className="bg-yellow-600 hover:bg-yellow-300 text-white px-5 py-2 rounded-md font-medium">SIGN IN</button>
+          </Link>
+
+
+        </div>
+
       </div>
     </nav>
   )
 }
 
-export default Navbar
+export default Navbar;

@@ -62,7 +62,7 @@ function Categories() {
       <div className="text-center">
         <p className='text-yellow-700 tracking-[5px] uppercase text-sm'> BROWSE BY
         </p>
-        <h1 className='text-6x1 font-serif mt-4'>
+        <h1 className='text-4xl md:text-5xl lg:text-6xl font-serif mt-4'>
           Our Collections
           </h1>
       </div>

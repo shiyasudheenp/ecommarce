@@ -182,60 +182,6 @@
       "description": "Beautiful traditional gold necklace",
       "stock": 10
     }
-    
-    
-    ],
-    "categories":[
-      {
-        "id":1,
-        "name":"Necklace",
-         "key": "necklace",
-      "icon": "💍",
-      "desc": "Timeless gold pieces",
-       "link": "/shop/necklace"
-      
-      
-      },
-       {
-        "id":2,
-        "name":"Earrings",
-         "key": "earrings",
-         "icon": "✨",
-         "desc": "Statement designs",
-          "link": "/shop/earrings"
-      },
-       {
-        "id":3,
-        "name":"Bangles",
-         "key": "bangles",
-         "icon": "💛",
-         "desc": "Traditional charm",
-          "link": "/shop/bangles"
-      },
-       {
-        "id":4,
-        "name":"Bracelets",
-         "key": "bracelets",
-      "icon": "🌟",
-      "desc": "Elegant wraps",
-       "link": "/shop/bracelets"
-      },
-       {
-        "id":5,
-        "name":"Rings",
-         "key": "rings",
-      "icon": "💍",
-      "desc": "Forever pieces",
-       "link": "/shop/rings"
-      },
-       {
-        "id":6,
-        "name":"Anklets",
-         "key": "anklets",
-      "icon": "🌸",
-      "desc": "Delicate beauty",
-       "link": "/shop/necklace"
-      }
     ],
     "product":[
       {"id": 1,
