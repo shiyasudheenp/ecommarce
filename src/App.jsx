@@ -14,11 +14,13 @@ import CategoryPage from "./Pages/CategoryPage"
 import Login from "./Pages/Login"
 import Register from "./Pages/Register"
 import Dashboard from "./Pages/Dashboard"
+import CartProvider from "./Pages/CartProvider"
 
 
 
 export default function App(){
   return(
+    <CartProvider>
     <BrowserRouter>
     <Navbar/>
     <Routes>
@@ -42,5 +44,6 @@ export default function App(){
     </Routes>
     <Footer/>
     </BrowserRouter>
+    </CartProvider>
   )
 }
