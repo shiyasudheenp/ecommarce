@@ -15,6 +15,7 @@ import Login from "./Pages/Login"
 import Register from "./Pages/Register"
 import Dashboard from "./Pages/Dashboard"
 import CartProvider from "./Pages/CartProvider"
+import Hero from "./Components/Hero"
 
 
 
@@ -24,11 +25,10 @@ export default function App(){
     <BrowserRouter>
     <Navbar/>
     <Routes>
-      <Route path="/" element={<Login/>}/>
+      <Route path="/" element={<Home />}/>
+      <Route path="/login" element={<Login/>}/>
       <Route path="/register" element={<Register/>}/>
       <Route path="/Dashboard" element={<Dashboard/>}/>
-      <Route path="/home" element={<Home/>}/>
-      <Route path="/" element={<Categories/>}/>
       <Route path="/shop/:category" element={<CategoryPage/>}/>
       <Route path="/Shop" element={<Shop/>}/>
       <Route path="/shop/:Categories" element={<Shop/>}/>
@@ -39,7 +39,6 @@ export default function App(){
       <Route path="/Cart" element={<Cart/>}/>
       <Route path="/Products" element={<Products/>}/>
       <Route path="/ProductsDetails/:category" element={<CategoryPage/>}/>
-      <Route path="/Contact" element={<Contact/>}/>
 
     </Routes>
     <Footer/>

@@ -1,34 +1,3 @@
-// import {Link} from "react-router-dom"
-// import "./Navbar.css"
-// import Logo4 from "../assets/Logo4.png"
-
-
-// function Navbar() {
-//   return (
-    
-    
-//     <nav className="navbar">
-//         <Link to="/">
-//   <img src={Logo4} alt="SHA_JEWELS" className="logo" />
-// </Link>
-//         <ul>
-//             <li><Link to="/">Home</Link></li>
-//             <li><Link to="/Shop">Shop</Link></li>
-//             <li><Link to="/Collesction">Collesction</Link></li>
-//             <li><Link to="/About">About</Link></li>
-//             <li><Link to="/contact">Contact</Link></li>
-//         </ul>
-//     </nav>
-//   )
-// }
-
-// export default Navbar
-
-
-
-
-
-
 import { Link } from "react-router-dom"
 import Logo1 from "../assets/Logo1.png"
 import { FaHeart } from "react-icons/fa";
@@ -89,7 +58,7 @@ function Navbar() {
           {/* cart */}
           <GiShoppingCart className="relative text-xl hover:text-yellow-600" />
           {/* sign in */}
-          <Link to="/register">
+          <Link to="/login">
           <button className="bg-yellow-600 hover:bg-yellow-300 text-white px-5 py-2 rounded-md font-medium">SIGN IN</button>
           </Link>
 

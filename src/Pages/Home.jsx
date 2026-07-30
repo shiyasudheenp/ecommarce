@@ -6,12 +6,15 @@ import Product from "../Components/Product";
 function Home() {
   return (
   <div>
-    <Hero/>
+ 
+    <Hero />
     <Categories/>
     <Product/>
+    
     
   </div>
   );
 }
 
 export default Home;
+
