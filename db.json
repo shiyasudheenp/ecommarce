@@ -1,7 +1,45 @@
 {
-    "products":[
-         {
-      "id": 1,
+  "users": [
+    {
+      "name": "shibin",
+      "email": "shibin1212@gmail.com",
+      "password": "121212",
+      "id": "zuNSOWx8uTo"
+    },
+    {
+      "name": "sheik",
+      "email": "sheikahmed@gmail.com",
+      "password": "sheikahmed",
+      "id": "mAbTWO6Fnxg"
+    },
+    {
+      "name": "john cena",
+      "email": "johncena10@gmail.com",
+      "password": "johncena",
+      "id": "W_4dGaWffds"
+    },
+    {
+      "name": "shiyas",
+      "email": "shiyas1212@gmail.com",
+      "password": "121212",
+      "id": "LsZjYuoIEpQ"
+    },
+    {
+      "name": "hardik pandya",
+      "email": "hardikpandya32@gmail.com",
+      "password": "hardikpandya",
+      "id": "8f5LjAnBILo"
+    },
+    {
+      "name": "shiya",
+      "email": "shiya222@gmail.com",
+      "password": "2222",
+      "id": "PGMVjRTuGkg"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
       "name": "Gold Necklace",
       "price": 199,
       "category": "necklace",
@@ -10,8 +48,7 @@
       "stock": 10
     },
     {
-         
-      "id": 2,
+      "id": "2",
       "name": "Gold Necklace",
       "price": 259,
       "category": "necklace",
@@ -20,7 +57,7 @@
       "stock": 10
     },
     {
-         "id": 3,
+      "id": "3",
       "name": "Gold Necklace",
       "price": 299,
       "category": "necklace",
@@ -29,7 +66,7 @@
       "stock": 10
     },
     {
-         "id": 4,
+      "id": "4",
       "name": "Gold Necklace",
       "price": 199,
       "category": "necklace",
@@ -38,7 +75,7 @@
       "stock": 10
     },
     {
-         "id": 5,
+      "id": "5",
       "name": "Gold Necklace",
       "price": 399,
       "category": "necklace",
@@ -47,7 +84,7 @@
       "stock": 10
     },
     {
-         "id": 6,
+      "id": "6",
       "name": "Gold Necklace",
       "price": 170,
       "category": "necklace",
@@ -56,7 +93,7 @@
       "stock": 10
     },
     {
-         "id": 7,
+      "id": "7",
       "name": "Gold Necklace",
       "price": 179,
       "category": "necklace",
@@ -65,7 +102,7 @@
       "stock": 10
     },
     {
-         "id": 8,
+      "id": "8",
       "name": "Gold Necklace",
       "price": 349,
       "category": "necklace",
@@ -74,7 +111,7 @@
       "stock": 10
     },
     {
-         "id": 9,
+      "id": "9",
       "name": "Gold Necklace",
       "price": 299,
       "category": "necklace",
@@ -83,17 +120,16 @@
       "stock": 10
     },
     {
-         "id": 10,
+      "id": "10",
       "name": "Gold Necklace",
       "price": 188,
       "category": "necklace",
       "image": "IMG-10.JPG.jpeg",
       "description": "Beautiful traditional gold necklace",
       "stock": 10
-
     },
     {
-         "id": 11,
+      "id": "11",
       "name": "Gold Necklace",
       "price": 299,
       "category": "necklace",
@@ -102,7 +138,7 @@
       "stock": 10
     },
     {
-         "id": 12,
+      "id": "12",
       "name": "Gold Necklace",
       "price": 399,
       "category": "necklace",
@@ -111,7 +147,7 @@
       "stock": 10
     },
     {
-         "id": 13,
+      "id": "13",
       "name": "Gold Necklace",
       "price": 169,
       "category": "necklace",
@@ -120,7 +156,7 @@
       "stock": 10
     },
     {
-         "id": 14,
+      "id": "14",
       "name": "Gold Necklace",
       "price": 155,
       "category": "necklace",
@@ -129,7 +165,7 @@
       "stock": 10
     },
     {
-         "id": 15,
+      "id": "15",
       "name": "Gold Necklace",
       "price": 189,
       "category": "necklace",
@@ -138,7 +174,7 @@
       "stock": 10
     },
     {
-         "id": 16,
+      "id": "16",
       "name": "Gold Necklace",
       "price": 199,
       "category": "necklace",
@@ -147,7 +183,7 @@
       "stock": 10
     },
     {
-         "id": 17,
+      "id": "17",
       "name": "Gold Necklace",
       "price": 199,
       "category": "necklace",
@@ -156,7 +192,7 @@
       "stock": 10
     },
     {
-         "id": 18,
+      "id": "18",
       "name": "Gold Necklace",
       "price": 189,
       "category": "necklace",
@@ -165,7 +201,7 @@
       "stock": 10
     },
     {
-         "id": 19,
+      "id": "19",
       "name": "Gold Necklace",
       "price": 169,
       "category": "necklace",
@@ -174,7 +210,7 @@
       "stock": 10
     },
     {
-         "id": 20,
+      "id": "20",
       "name": "Gold Necklace",
       "price": 179,
       "category": "necklace",
@@ -182,9 +218,10 @@
       "description": "Beautiful traditional gold necklace",
       "stock": 10
     }
-    ],
-    "product":[
-      {"id": 1,
+  ],
+  "product": [
+    {
+      "id": "1",
       "name": "Gold Necklace",
       "category": "necklace",
       "price": 199,
@@ -194,8 +231,9 @@
       "reviews": 120,
       "isNew": true,
       "discount": 20
-      },
-      {"id": 2,
+    },
+    {
+      "id": "2",
       "name": "Gold Necklace",
       "category": "necklace",
       "price": 199,
@@ -205,9 +243,9 @@
       "reviews": 120,
       "isNew": true,
       "discount": 20
-   },
-   {
-      "id": 3,
+    },
+    {
+      "id": "3",
       "name": "Gold Necklace",
       "category": "necklace",
       "price": 199,
@@ -217,9 +255,9 @@
       "reviews": 120,
       "isNew": true,
       "discount": 20
-   },
-   {
-      "id": 4,
+    },
+    {
+      "id": "4",
       "name": "Gold Necklace",
       "category": "necklace",
       "price": 199,
@@ -229,9 +267,9 @@
       "reviews": 120,
       "isNew": true,
       "discount": 20
-   },
-   {
-      "id": 5,
+    },
+    {
+      "id": "5",
       "name": "Gold Necklace",
       "category": "necklace",
       "price": 199,
@@ -241,9 +279,9 @@
       "reviews": 120,
       "isNew": true,
       "discount": 20
-   },
-   {
-      "id": 6,
+    },
+    {
+      "id": "6",
       "name": "Gold Necklace",
       "category": "necklace",
       "price": 199,
@@ -253,9 +291,9 @@
       "reviews": 120,
       "isNew": true,
       "discount": 20
-   },
-   {
-      "id": 7,
+    },
+    {
+      "id": "7",
       "name": "Gold Necklace",
       "category": "necklace",
       "price": 199,
@@ -265,9 +303,9 @@
       "reviews": 120,
       "isNew": true,
       "discount": 20
-   },
-   {
-      "id": 8,
+    },
+    {
+      "id": "8",
       "name": "Gold Necklace",
       "category": "necklace",
       "price": 199,
@@ -277,7 +315,53 @@
       "reviews": 120,
       "isNew": true,
       "discount": 20
-   }
-    ]
+    }
+  ],
 
+   "categories": [
+    {
+      "id": 1,
+      "name": "Necklaces",
+      "key": "necklace",
+      "icon": "📿",
+      "desc": "Timeless gold necklaces for every occasion"
+    },
+    {
+      "id": 2,
+      "name": "Earrings",
+      "key": "earring",
+      "icon": "💎",
+      "desc": "Elegant earrings to elevate your style"
+    },
+    {
+      "id": 3,
+      "name": "Bangles",
+      "key": "bangle",
+      "icon": "⭕",
+      "desc": "Traditional and modern bangles"
+    },
+    {
+      "id": 4,
+      "name": "Bracelet",
+      "key": "bracelet",
+      "icon": "🔗",
+      "desc": "Delicate bracelets crafted with care"
+    },
+    {
+      "id": 5,
+      "name": "Rings",
+      "key": "ring",
+      "icon": "💍",
+      "desc": "Statement rings for every hand"
+    },
+    {
+      "id": 6,
+      "name": "New Arrivals",
+      "key": "new",
+      "icon": "✨",
+      "desc": "The latest additions to our collection"
+    }
+  ],
+  
+  "$schema": "./node_modules/json-server/schema.json"
 }

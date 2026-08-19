@@ -1,24 +1,43 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showpassword,setShowpassword]= useState(false);
 
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
 
-    // Demo Login
-    if (
-      email === "abc123@email.com" &&
-      password === "1234"
-    ) {
-      navigate("/Home");
-    } else {
-      alert("Invalid Email or Password");
+    try{
+      // user take to Json server
+      const response = await axios.get(
+        "http://localhost:3001/users"
+      );
+      // Email or Password checking to match
+      const existingUser = response.data.find(
+        (user)=>
+          user.email === email &&
+        user.password === password
+      );
+
+      if(existingUser){
+        localStorage.setItem("user",true)
+        alert("Login successful")
+
+        navigate("/shop")
+      }else{
+        alert("invalid email or password")
+      }
+      
+    }catch(error){
+      console.log(error);
+      alert("Login failed")
     }
+   
   };
 
   return (
@@ -55,6 +74,7 @@ function Login() {
             type="email"
             placeholder="Enter Email"
             value={email}
+            autoComplete="off"
             onChange={(e)=>setEmail(e.target.value)}
             className="p-3 rounded-lg
             bg-black/40 text-white
@@ -63,19 +83,27 @@ function Login() {
           />
 
           <input
-            type="password"
+            type={showpassword ? "text":"password"}
             placeholder="Enter Password"
             value={password}
+            autoComplete="new-password"
             onChange={(e)=>setPassword(e.target.value)}
             className="p-3 rounded-lg
             bg-black/40 text-white
             border border-gray-600
             outline-none"
           />
+          <button
+            type="button"
+            onClick={()=> setShowpassword(!showpassword)}
+            className="absolute right-12 top-54 -translate-y-1/2"
+            >
+               {showpassword ? "👁️" : "🙈"}
+            </button>
 
           <button
             type="submit"
-            className="bg-yellow-600 hover:bg-yellow-500
+           className="bg-yellow-600 hover:bg-yellow-500
             transition-all duration-300
             text-white py-3 rounded-lg
             font-semibold"

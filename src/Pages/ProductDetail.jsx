@@ -1,23 +1,3 @@
-// import React from 'react'
-// import { useState,useEffect } from 'react'
-// import axios from 'axios'
-
-// function Featured() {
-//     const[products,setProducts]=useState([])
-//     useEffect(()=>{
-//         axios.get(" http://localhost:3001/product")
-//         .then ((res)=> setProducts(res.data));
-//     },[])
-//   return (
-//     <div>
-      
-
-//     </div>
-//   )
-// }
-
-// export default Featured
-
 import React, { useContext, useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -25,7 +5,7 @@ import { FaHeart } from "react-icons/fa";
 import { cartContext } from "./CartProvider";
 import { wishlistContext } from "./WishlistProvider";
 
-function Featured() {
+function ProductDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
 
@@ -120,6 +100,4 @@ function Featured() {
   );
 }
 
-export default Featured;
-
-
+export default ProductDetail;
