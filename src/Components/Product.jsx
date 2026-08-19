@@ -160,10 +160,18 @@ function Featured() {
                 >
                   Add To Cart
                 </button>
-                <button
-                  onClick={() => navigate(`/checkout/${item.id}`)}
-                  className="flex-1 bg-black hover:bg-gray-800 text-white py-2 rounded-md text-sm"
-                >
+               <button
+                 onClick={() => {
+                const isLoggedIn = localStorage.getItem("user");
+                if (isLoggedIn) {
+                 navigate(`/checkout/${item.id}`);
+                } else {
+                alert("Please login to continue!");
+                 navigate("/login");
+                }
+               }}
+               className="flex-1 bg-black hover:bg-gray-800 text-white py-2 rounded-md text-sm"
+                  >
                   BUY
                 </button>
               </div>

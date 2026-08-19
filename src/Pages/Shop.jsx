@@ -257,9 +257,17 @@ const searchTerm = searchParams.get("search") || "";
               </button>
 
               {/* BUY */}
-              <button
-                onClick={() => navigate(`/checkout/${item.id}`)}
-                className="flex-1 bg-black text-white hover:bg-gray-800 py-2 rounded-md"
+            <button
+               onClick={() => {
+              const isLoggedIn = localStorage.getItem("user");
+               if (isLoggedIn) {
+              navigate(`/checkout/${item.id}`);
+             } else {
+              alert("Please login to continue!");
+            navigate("/login");
+             }
+             }}
+             className="flex-1 bg-black hover:bg-gray-800 text-white py-2 rounded-md text-sm"
               >
                 BUY
               </button>
