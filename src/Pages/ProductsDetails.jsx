@@ -7,7 +7,7 @@ function ProductsDetails() {
   const{category}=useParams()
   let[products,setProducts]=useState([])
   useEffect(()=>{
-    axios.get("http://localhost:3000/categories")
+    axios.get("http://localhost:3001/categories")
     .then((res)=>{
       let filtered=res.data.filter(
         (item)=>item.category===category

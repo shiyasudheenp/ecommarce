@@ -35,6 +35,39 @@
       "email": "shiya222@gmail.com",
       "password": "2222",
       "id": "PGMVjRTuGkg"
+    },
+    {
+      "name": "sachin",
+      "email": "sachin1212@gmail.com",
+      "password": "1212123",
+      "id": "7D2Bjkxpx54"
+    }
+  ],
+  "orders": [
+    {
+      "items": [
+        {
+          "id": "2",
+          "name": "Gold Necklace",
+          "price": 259,
+          "category": "necklace",
+          "image": "/IMG-2.JPG.jpeg",
+          "description": "Beautiful traditional gold necklace",
+          "stock": 10,
+          "qty": 1
+        }
+      ],
+      "total": 259,
+      "address": {
+        "name": "ryucijcd",
+        "phone": "9678456756",
+        "pincode": "565644",
+        "city": "kovai",
+        "address": "dfdfdhsfdsfgsdjgfhgfdhsfbwhfbfsdfbjsdk"
+      },
+      "status": "Placed",
+      "date": "2026-09-03T10:45:57.811Z",
+      "id": "zi_bDWXiuic"
     }
   ],
   "products": [
@@ -317,51 +350,48 @@
       "discount": 20
     }
   ],
-
-   "categories": [
+  "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Necklaces",
       "key": "necklace",
       "icon": "📿",
       "desc": "Timeless gold necklaces for every occasion"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Earrings",
       "key": "earring",
       "icon": "💎",
       "desc": "Elegant earrings to elevate your style"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Bangles",
       "key": "bangle",
       "icon": "⭕",
       "desc": "Traditional and modern bangles"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Bracelet",
       "key": "bracelet",
       "icon": "🔗",
       "desc": "Delicate bracelets crafted with care"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Rings",
       "key": "ring",
       "icon": "💍",
       "desc": "Statement rings for every hand"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "New Arrivals",
       "key": "new",
       "icon": "✨",
       "desc": "The latest additions to our collection"
     }
-  ],
-  
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
