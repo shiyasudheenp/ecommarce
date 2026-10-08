@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -8,6 +8,13 @@ function Login() {
   const [showpassword,setShowpassword]= useState(false);
 
   const navigate = useNavigate();
+
+  // Already login aanenkil login page kaanikkanda, home-ilekku vidum
+  useEffect(() => {
+    if (localStorage.getItem("user")) {
+      navigate("/", { replace: true });
+    }
+  }, [navigate]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -26,9 +33,18 @@ function Login() {
 
       if(existingUser){
         localStorage.setItem("user",true)
+        // Account Information page-il kaanikkan vendi profile save cheyyunnu
+        localStorage.setItem(
+          "profile",
+          JSON.stringify({
+            name: existingUser.name || "",
+            email: existingUser.email || "",
+            phone: existingUser.phone || "",
+          })
+        )
         alert("Login successful")
 
-        navigate("/shop")
+        navigate("/", { replace: true })
       }else{
         alert("invalid email or password")
       }

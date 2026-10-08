@@ -7,6 +7,17 @@ import { useContext, useState, useEffect, useRef } from "react";
 import { cartContext } from "../Pages/CartProvider";
 import { wishlistContext } from "../Pages/WishlistProvider";
 
+// Bottom row-ile nav links (puthuthaayi add cheythathu)
+const navLinks = [
+  { label: "All", path: "/shop" },
+  { label: "Necklace", path: "/shop/necklace" },
+  { label: "Earrings", path: "/shop/earrings" },
+  { label: "Bangles", path: "/shop/bangles" },
+  { label: "Bracelets", path: "/shop/bracelets" },
+  { label: "Rings", path: "/shop/rings" },
+  { label: "Anklets", path: "/shop/anklets" },
+];
+
 function Navbar() {
 
   const navigate = useNavigate();
@@ -25,6 +36,7 @@ function Navbar() {
 
   const handleLogout = () => {
     localStorage.removeItem("user");
+    localStorage.removeItem("profile");
     setUser(null);
     setShowProfile(false);
     alert("Logout successful");
@@ -242,18 +254,24 @@ function Navbar() {
                       Hi {JSON.parse(localStorage.getItem("profile") || "{}").name || "there"}
                     </p>
 
-                    <div className="flex gap-3">
+                    <div className="flex flex-col gap-3">
                       <button
                         onClick={() => { setShowProfile(false); navigate("/profile"); }}
-                        className="flex-1 border border-gray-300 hover:border-yellow-600 py-2 rounded-md text-sm font-medium transition-all"
+                        className="w-full border border-gray-300 hover:border-yellow-600 py-2 rounded-md text-sm font-medium transition-all"
                       >
                         My Account
                       </button>
                       <button
                         onClick={handleLogout}
-                        className="flex-1 bg-yellow-600 hover:bg-yellow-700 text-white py-2 rounded-md text-sm font-medium transition-all"
+                        className="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-2 rounded-md text-sm font-medium transition-all"
                       >
                         Logout
+                      </button>
+                      <button
+                        onClick={() => { setShowProfile(false); navigate("/my-orders"); }}
+                        className="w-full border border-gray-300 hover:border-yellow-600 py-2 rounded-md text-sm font-medium transition-all"
+                      >
+                        My Orders
                       </button>
                     </div>
                   </div>
@@ -289,41 +307,16 @@ function Navbar() {
       {/* BOTTOM ROW: Nav Links */}
       <div className="bg-[#f3e8d8] border-t border-gray-200">
         <ul className="flex items-center justify-center gap-8 list-none py-2.5">
-          <li>
-            <Link to="/shop" className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all">
-              All
-            </Link>
-          </li>
-          <li>
-            <Link to="/shop/Necklace" className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all">
-              Necklace
-            </Link>
-          </li>
-          <li>
-            <Link to="/Shop/earrings" className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all">
-              Earrings
-            </Link>
-          </li>
-          <li>
-            <Link to="/shop/bangles" className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all">
-              Bangles
-            </Link>
-          </li>
-          <li>
-            <Link to="/shop/bracelets" className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all">
-              Bracelets
-            </Link>
-          </li>
-          <li>
-            <Link to="/shop/rings" className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all">
-              Rings
-            </Link>
-          </li>
-          <li>
-            <Link to="/shop/anklets" className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all">
-              Anklets
-            </Link>
-          </li>
+          {navLinks.map(({ label, path }) => (
+            <li key={path}>
+              <Link
+                to={path}
+                className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all"
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
 

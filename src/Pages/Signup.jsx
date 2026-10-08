@@ -1,10 +1,17 @@
 import React from 'react'
- import { useState } from 'react'
+ import { useState, useEffect } from 'react'
  import {useNavigate} from 'react-router-dom'
  import axios from 'axios'
 
 function Signup() {
   const navigate= useNavigate()
+
+  // Already login aanenkil register page kaanikkanda, home-ilekku vidum
+  useEffect(() => {
+    if (localStorage.getItem("user")) {
+      navigate("/", { replace: true });
+    }
+  }, [navigate])
 
     const[name,setName]=useState("")
     const[email,setEmail]=useState("")
@@ -44,7 +51,7 @@ await axios.post(
 );
 
 alert("Registration success");
-navigate("/login");
+navigate("/login", { replace: true });
 
 
 } catch (error) {
@@ -118,7 +125,10 @@ alert("Registration failed");
 
   <p className="text-center text-gray-300 mt-5">
     Already have an account?
-    <span className="text-yellow-500 cursor-pointer ml-2">
+    <span
+      onClick={() => navigate("/login", { replace: true })}
+      className="text-yellow-500 cursor-pointer ml-2"
+    >
       Login
     </span>
   </p>

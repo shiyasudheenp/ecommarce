@@ -11,6 +11,12 @@
       "email": "shiyas234@gmail.com",
       "password": "098765",
       "id": "HDbIASzSP5U"
+    },
+    {
+      "name": "sri",
+      "email": "sri1234@gmail.com",
+      "password": "123456789",
+      "id": "AqUJJ5KMhNY"
     }
   ],
   "orders": [
@@ -54,8 +60,8 @@
       "id": "1",
       "name": "Pearl Drop Pendant Necklace",
       "category": "necklace",
-      "price": 199,
-      "oldPrice": 250,
+      "price": 265,
+      "oldPrice": 350,
       "image": "/IMG_21.PNG",
       "rating": 4,
       "reviews": 120,
@@ -71,7 +77,7 @@
       "id": "2",
       "name": "Charm Station Necklace",
       "category": "necklace",
-      "price": 199,
+      "price": 179,
       "oldPrice": 250,
       "image": "/IMG-16.JPG.jpeg",
       "rating": 4,
@@ -88,8 +94,8 @@
       "id": "3",
       "name": "Layered Bow Pendant Necklace",
       "category": "necklace",
-      "price": 199,
-      "oldPrice": 250,
+      "price": 299,
+      "oldPrice": 349,
       "image": "/IMG-15.JPG.jpeg",
       "rating": 4,
       "reviews": 120,
@@ -105,8 +111,8 @@
       "id": "4",
       "name": "Bow Pendant Necklace",
       "category": "necklace",
-      "price": 199,
-      "oldPrice": 250,
+      "price": 256,
+      "oldPrice": 355,
       "image": "/IMG-13.JPG.jpeg",
       "rating": 4,
       "reviews": 120,
@@ -122,8 +128,8 @@
       "id": "5",
       "name": "Rectangular Pendant Necklace",
       "category": "necklace",
-      "price": 199,
-      "oldPrice": 250,
+      "price": 459,
+      "oldPrice": 499,
       "image": "/IMG-11.JPG.jpeg",
       "rating": 4,
       "reviews": 120,
@@ -139,8 +145,8 @@
       "id": "6",
       "name": "Floral Charm Necklace — flower",
       "category": "necklace",
-      "price": 199,
-      "oldPrice": 250,
+      "price": 389,
+      "oldPrice": 420,
       "image": "/IMG-10.JPG.jpeg",
       "rating": 4,
       "reviews": 120,
@@ -156,8 +162,8 @@
       "id": "7",
       "name": "Gold Necklace",
       "category": "Four-Leaf Clover Necklace",
-      "price": 199,
-      "oldPrice": 250,
+      "price": 156,
+      "oldPrice": 220,
       "image": "/IMG-5.JPG.jpeg",
       "rating": 4,
       "reviews": 120,
@@ -173,8 +179,8 @@
       "id": "8",
       "name": "Clover Pendant Necklace",
       "category": "necklace",
-      "price": 199,
-      "oldPrice": 250,
+      "price": 225,
+      "oldPrice": 280,
       "image": "/IMG-4.JPG.jpeg",
       "rating": 4,
       "reviews": 120,
@@ -188,8 +194,8 @@
     },
     {
       "id": "9",
-      "price": 199,
-      "oldPrice": 299,
+      "price": 187,
+      "oldPrice": 256,
       "name": "Bow Pendant Necklace",
       "category": "Necklace",
       "image": "/IMG-1.JPG.jpeg",
@@ -202,8 +208,8 @@
     },
     {
       "id": "10",
-      "price": 259,
-      "oldPrice": 350,
+      "price": 550,
+      "oldPrice": 600,
       "name": "Crescent Pendant Necklace",
       "category": "Necklace",
       "image": "/IMG-2.JPG.jpeg",
@@ -213,8 +219,8 @@
     {
       "id": "11",
       "name": "Four-Leaf Clover Necklace",
-      "price": 299,
-      "oldPrice": 350,
+      "price": 480,
+      "oldPrice": 530,
       "category": "Necklace",
       "image": "/IMG-3.JPG.jpeg",
       "description": "Beautiful traditional gold necklace",
@@ -223,8 +229,8 @@
     {
       "id": "12",
       "name": "Teardrop Pendant Necklace",
-      "price": 199,
-      "oldPrice": 350,
+      "price": 438,
+      "oldPrice": 480,
       "category": "Necklace",
       "image": "/IMG-7.JPG.jpeg",
       "description": "Beautiful traditional gold necklace",
@@ -233,8 +239,8 @@
     {
       "id": "13",
       "name": "Four Leaf Clover Necklace",
-      "price": 399,
-      "oldPrice": 350,
+      "price": 559,
+      "oldPrice": 600,
       "category": "Necklace",
       "image": "/IMG-5.JPG.jpeg",
       "description": "Beautiful traditional gold necklace",
@@ -243,8 +249,8 @@
     {
       "id": "14",
       "name": "Double Heart Pendant Necklace",
-      "price": 170,
-      "oldPrice": 350,
+      "price": 299,
+      "oldPrice": 365,
       "category": "Necklace",
       "image": "/IMG-6.JPG.jpeg",
       "description": "Beautiful traditional gold necklace",
@@ -253,8 +259,8 @@
     {
       "id": "15",
       "name": "Teardrop Pendant Necklace",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 800,
+      "oldPrice": 940,
       "category": "Necklace",
       "image": "/IMG-7.JPG.jpeg",
       "description": "Beautiful traditional gold necklace",
@@ -263,8 +269,8 @@
     {
       "id": "16",
       "name": "Floral Charm Pendant Necklace",
-      "price": 299,
-      "oldPrice": 350,
+      "price": 746,
+      "oldPrice": 800,
       "category": "Necklace",
       "image": "/IMG-9.JPG.jpeg",
       "description": "Beautiful traditional gold necklace",
@@ -273,8 +279,8 @@
     {
       "id": "17",
       "name": "Floral Pendant Necklace",
-      "price": 188,
-      "oldPrice": 350,
+      "price": 649,
+      "oldPrice": 700,
       "category": "Necklace",
       "image": "/IMG-10.JPG.jpeg",
       "description": "Beautiful traditional gold necklace",
@@ -283,8 +289,8 @@
     {
       "id": "18",
       "name": "Rectangular Zircon Pendant Necklace",
-      "price": 299,
-      "oldPrice": 350,
+      "price": 630,
+      "oldPrice": 680,
       "category": "Necklace",
       "image": "/IMG-11.JPG.jpeg",
       "description": "Beautiful traditional gold necklace",
@@ -293,8 +299,8 @@
     {
       "id": "19",
       "name": "Infinity Pendant Necklace",
-      "price": 399,
-      "oldPrice": 350,
+      "price": 550,
+      "oldPrice": 599,
       "category": "Necklace",
       "image": "/IMG-12.JPG.jpeg",
       "description": "Beautiful traditional gold necklace",
@@ -303,8 +309,8 @@
     {
       "id": "20",
       "name": "Bow Pendant Necklace",
-      "price": 169,
-      "oldPrice": 350,
+      "price": 349,
+      "oldPrice": 499,
       "category": "Necklace",
       "image": "/IMG-13.JPG.jpeg",
       "description": "Beautiful traditional gold necklace",
@@ -313,8 +319,8 @@
     {
       "id": "21",
       "name": "Charm Drop Necklace",
-      "price": 155,
-      "oldPrice": 350,
+      "price": 380,
+      "oldPrice": 410,
       "category": "Necklace",
       "image": "/IMG-14.JPG.jpeg",
       "description": "Beautiful traditional gold necklace",
@@ -323,8 +329,8 @@
     {
       "id": "22",
       "name": "Layered Chain Necklace",
-      "price": 189,
-      "oldPrice": 350,
+      "price": 699,
+      "oldPrice": 750,
       "category": "Necklace",
       "image": "/IMG-15.JPG.jpeg",
       "description": "Beautiful traditional gold necklace",
@@ -333,8 +339,8 @@
     {
       "id": "23",
       "name": "Station Necklace",
-      "price": 199,
-      "oldPrice": 350,
+      "price": 599,
+      "oldPrice": 649,
       "category": "Necklace",
       "image": "/IMG-16.JPG.jpeg",
       "description": "Beautiful traditional gold necklace",
@@ -343,8 +349,8 @@
     {
       "id": "24",
       "name": "Gemstone Station Necklace",
-      "price": 199,
-      "oldPrice": 350,
+      "price": 640,
+      "oldPrice": 700,
       "category": "Necklace",
       "image": "/IMG-17.PNG",
       "description": "Beautiful traditional gold necklace",
@@ -353,8 +359,8 @@
     {
       "id": "25",
       "name": "Heart Pendant Necklace",
-      "price": 189,
-      "oldPrice": 350,
+      "price": 799,
+      "oldPrice": 810,
       "category": "Necklace",
       "image": "/IMG-18.PNG",
       "description": "Beautiful traditional gold necklace",
@@ -363,8 +369,8 @@
     {
       "id": "26",
       "name": "Minimal V Pendant Necklace",
-      "price": 169,
-      "oldPrice": 350,
+      "price": 640,
+      "oldPrice": 799,
       "category": "Necklace",
       "image": "/IMG-19.PNG",
       "description": "Beautiful traditional gold necklace",
@@ -373,8 +379,8 @@
     {
       "id": "27",
       "name": "Solitaire Pendant Necklace",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 389,
+      "oldPrice": 450,
       "category": "Necklace",
       "image": "/IMG-20.PNG",
       "description": "Beautiful traditional gold necklace",
@@ -383,8 +389,8 @@
     {
       "id": "28",
       "name": "Floral Cluster Ring",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 650,
+      "oldPrice": 700,
       "category": "rings",
       "image": "/Ring1.jpg",
       "images": [
@@ -397,8 +403,8 @@
     {
       "id": "29",
       "name": "Swirl Design Ring",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 599,
+      "oldPrice": 650,
       "category": "rings",
       "image": "/Ring2.jpg",
       "images": [
@@ -411,8 +417,8 @@
     {
       "id": "30",
       "name": "Star & Pavé Ring",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 740,
+      "oldPrice": 780,
       "category": "rings",
       "image": "/Ring3.jpg",
       "images": [
@@ -425,8 +431,8 @@
     {
       "id": "31",
       "name": "Floral Cluster Ring",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 399,
+      "oldPrice": 450,
       "category": "rings",
       "image": "/Ring4.jpg",
       "images": [
@@ -439,8 +445,8 @@
     {
       "id": "32",
       "name": "Infinity & Flower Ring",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 349,
+      "oldPrice": 440,
       "category": "rings",
       "image": "/Ring5.jpg",
       "images": [
@@ -453,8 +459,8 @@
     {
       "id": "33",
       "name": "V-Shaped Bridal Ring",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 449,
+      "oldPrice": 510,
       "category": "rings",
       "image": "/Ring6.jpg",
       "images": [
@@ -467,8 +473,8 @@
     {
       "id": "34",
       "name": "Ruby & Diamond Band Ring",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 649,
+      "oldPrice": 700,
       "category": "rings",
       "image": "/Ring7.jpg",
       "images": [
@@ -481,8 +487,8 @@
     {
       "id": "35",
       "name": "Diamond Cluster Band Ring",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 229,
+      "oldPrice": 300,
       "category": "rings",
       "image": "/Ring8.jpg",
       "images": [
@@ -495,8 +501,8 @@
     {
       "id": "36",
       "name": "Double Oval Diamond Ring",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 289,
+      "oldPrice": 320,
       "category": "rings",
       "image": "/Ring9.jpg",
       "images": [
@@ -509,8 +515,8 @@
     {
       "id": "37",
       "name": "Wave Diamond Ring",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 420,
+      "oldPrice": 449,
       "category": "rings",
       "image": "/Ring10.jpg",
       "images": [
@@ -523,8 +529,8 @@
     {
       "id": "38",
       "name": "Pear-Shaped Halo Ring",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 250,
+      "oldPrice": 299,
       "category": "rings",
       "image": "/Ring11.jpg",
       "images": [
@@ -537,8 +543,8 @@
     {
       "id": "39",
       "name": "Sunburst Cluster Ring",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 345,
+      "oldPrice": 380,
       "category": "rings",
       "image": "/Ring12.jpg",
       "images": [
@@ -551,8 +557,8 @@
     {
       "id": "40",
       "name": "Floral & Infinity Ring",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 239,
+      "oldPrice": 255,
       "category": "rings",
       "image": "/Ring13.jpg",
       "images": [
@@ -565,8 +571,8 @@
     {
       "id": "41",
       "name": "Pearl Drop Chandelier Earrings",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 678,
+      "oldPrice": 700,
       "category": "earrings",
       "image": "/Erri1.jpg",
       "images": [
@@ -579,8 +585,8 @@
     {
       "id": "42",
       "name": "Red Pear-Shaped Gemstone Earrings",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 576,
+      "oldPrice": 678,
       "category": "earrings",
       "image": "/Erri2.jpg",
       "images": [
@@ -593,8 +599,8 @@
     {
       "id": "43",
       "name": "Sunburst Stud Earrings",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 225,
+      "oldPrice": 255,
       "category": "earrings",
       "image": "/Erri3.jpg",
       "images": [
@@ -607,8 +613,8 @@
     {
       "id": "44",
       "name": "Floral Pearl Drop Earrings",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 399,
+      "oldPrice": 430,
       "category": "earrings",
       "image": "/Erri4.jpg",
       "images": [
@@ -621,8 +627,8 @@
     {
       "id": "45",
       "name": "Long Chain Drop Earrings",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 488,
+      "oldPrice": 510,
       "category": "earrings",
       "image": "/Erri5.jpg",
       "images": [
@@ -635,8 +641,8 @@
     {
       "id": "46",
       "name": "Floral Green Emerald Drop Earrings",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 150,
+      "oldPrice": 200,
       "category": "earrings",
       "image": "/Erri6.jpg",
       "images": [
@@ -649,8 +655,8 @@
     {
       "id": "47",
       "name": "Emerald Chandelier Earrings",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 360,
+      "oldPrice": 399,
       "category": "earrings",
       "image": "/Erri7.jpg",
       "images": [
@@ -664,7 +670,7 @@
       "id": "48",
       "name": "Long Geometric Drop Earrings",
       "price": 179,
-      "oldPrice": 350,
+      "oldPrice": 200,
       "category": "earrings",
       "image": "/Erri8.jpg",
       "images": [
@@ -677,8 +683,8 @@
     {
       "id": "49",
       "name": "Crystal Chandelier Earrings",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 299,
+      "oldPrice": 359,
       "category": "earrings",
       "image": "/Erri9.jpg",
       "images": [
@@ -691,8 +697,8 @@
     {
       "id": "50",
       "name": "Blue Sapphire Drop Earrings",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 699,
+      "oldPrice": 750,
       "category": "earrings",
       "image": "/Erri10.jpg",
       "images": [
@@ -705,8 +711,8 @@
     {
       "id": "51",
       "name": "Rose Gold Diamond Bracelet",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 350,
+      "oldPrice": 400,
       "category": "bracelets",
       "image": "/br1.jpg",
       "images": [
@@ -719,8 +725,8 @@
     {
       "id": "52",
       "name": "Rose Gold Tennis Bracelet",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 489,
+      "oldPrice": 550,
       "category": "bracelets",
       "image": "/br2.jpg",
       "images": [
@@ -733,8 +739,8 @@
     {
       "id": "53",
       "name": "Rose Gold Diamond Tennis Bracelet",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 499,
+      "oldPrice": 550,
       "category": "bracelets",
       "image": "/br3.jpg",
       "images": [
@@ -747,8 +753,8 @@
     {
       "id": "54",
       "name": "Rose Gold Diamond Bangle",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 650,
+      "oldPrice": 700,
       "category": "bracelets",
       "image": "/br4.jpg",
       "images": [
@@ -761,8 +767,8 @@
     {
       "id": "55",
       "name": "Infinity Chain Bracelet",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 599,
+      "oldPrice": 620,
       "category": "bracelets",
       "image": "/br5.jpg",
       "images": [
@@ -775,8 +781,8 @@
     {
       "id": "56",
       "name": "Diamond-Cut Gold Bangles",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 650,
+      "oldPrice": 699,
       "category": "bangles",
       "image": "/ban1.jpg",
       "images": [
@@ -789,8 +795,8 @@
     {
       "id": "57",
       "name": "Gold Diamond Bangle",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 529,
+      "oldPrice": 580,
       "category": "bangles",
       "image": "/ban2.jpg",
       "images": [
@@ -803,8 +809,8 @@
     {
       "id": "58",
       "name": "Ruby & Diamond Bangle",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 477,
+      "oldPrice": 499,
       "category": "bangles",
       "image": "/ban3.jpg",
       "images": [
@@ -817,8 +823,8 @@
     {
       "id": "59",
       "name": "Floral Motif Bangle",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 799,
+      "oldPrice": 840,
       "category": "bangles",
       "image": "/ban4.jpg",
       "images": [
@@ -831,8 +837,8 @@
     {
       "id": "60",
       "name": "Double-Line Diamond Bangle",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 559,
+      "oldPrice": 600,
       "category": "bangles",
       "image": "/ban5.jpg",
       "images": [
@@ -845,8 +851,8 @@
     {
       "id": "61",
       "name": "Rose Gold Drop Bangles",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 649,
+      "oldPrice": 680,
       "category": "bangles",
       "image": "/ban6.jpg",
       "images": [
@@ -859,8 +865,8 @@
     {
       "id": "62",
       "name": "Gold & Diamond Chain Bangles",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 569,
+      "oldPrice": 610,
       "category": "bangles",
       "image": "/ban7.jpg",
       "images": [
@@ -873,8 +879,8 @@
     {
       "id": "63",
       "name": "Gold & Diamond Chain Bangles",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 459,
+      "oldPrice": 499,
       "category": "anklets",
       "image": "/an1.webp",
       "description": "Beautiful traditional gold necklace",
@@ -883,8 +889,8 @@
     {
       "id": "64",
       "name": "Gold & Diamond Chain Bangles",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 259,
+      "oldPrice": 310,
       "category": "anklets",
       "image": "/an2.jpg",
       "images": [
@@ -896,8 +902,8 @@
     {
       "id": "65",
       "name": "Gold & Diamond Chain Bangles",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 259,
+      "oldPrice": 300,
       "category": "anklets",
       "image": "/an3.webp",
       "images": [
@@ -910,8 +916,8 @@
     {
       "id": "66",
       "name": "Gold & Diamond Chain Bangles",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 549,
+      "oldPrice": 570,
       "category": "anklets",
       "image": "/an4.webp",
       "images": [
@@ -924,8 +930,8 @@
     {
       "id": "67",
       "name": "Gold & Diamond Chain Bangles",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 659,
+      "oldPrice": 699,
       "category": "anklets",
       "image": "/an5.webp",
       "images": [
@@ -938,8 +944,8 @@
     {
       "id": "68",
       "name": "Gold & Diamond Chain Bangles",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 799,
+      "oldPrice": 840,
       "category": "anklets",
       "image": "/an6.webp",
       "images": [
@@ -952,8 +958,8 @@
     {
       "id": "69",
       "name": "Gold & Diamond Chain Bangles",
-      "price": 179,
-      "oldPrice": 350,
+      "price": 849,
+      "oldPrice": 899,
       "category": "anklets",
       "image": "/an7.webp",
       "images": [
