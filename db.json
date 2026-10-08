@@ -1,261 +1,58 @@
 {
   "users": [
     {
-      "name": "shibin",
-      "email": "shibin1212@gmail.com",
-      "password": "121212",
-      "id": "zuNSOWx8uTo"
+      "name": "vijay",
+      "email": "vijay123@gmail.com",
+      "password": "12345",
+      "id": "ptcrkbZfo6c"
     },
     {
-      "name": "sheik",
-      "email": "sheikahmed@gmail.com",
-      "password": "sheikahmed",
-      "id": "mAbTWO6Fnxg"
-    },
-    {
-      "name": "john cena",
-      "email": "johncena10@gmail.com",
-      "password": "johncena",
-      "id": "W_4dGaWffds"
-    },
-    {
-      "name": "shiyas",
-      "email": "shiyas1212@gmail.com",
-      "password": "121212",
-      "id": "LsZjYuoIEpQ"
-    },
-    {
-      "name": "hardik pandya",
-      "email": "hardikpandya32@gmail.com",
-      "password": "hardikpandya",
-      "id": "8f5LjAnBILo"
-    },
-    {
-      "name": "shiya",
-      "email": "shiya222@gmail.com",
-      "password": "2222",
-      "id": "PGMVjRTuGkg"
-    },
-    {
-      "name": "sachin",
-      "email": "sachin1212@gmail.com",
-      "password": "1212123",
-      "id": "7D2Bjkxpx54"
+      "name": "shiyasu",
+      "email": "shiyas234@gmail.com",
+      "password": "098765",
+      "id": "HDbIASzSP5U"
     }
   ],
   "orders": [
     {
       "items": [
         {
-          "id": "2",
-          "name": "Gold Necklace",
-          "price": 259,
+          "id": "1",
+          "name": "Pearl Drop Pendant Necklace",
           "category": "necklace",
-          "image": "/IMG-2.JPG.jpeg",
-          "description": "Beautiful traditional gold necklace",
-          "stock": 10,
+          "price": 199,
+          "oldPrice": 250,
+          "image": "/IMG_21.PNG",
+          "rating": 4,
+          "reviews": 120,
+          "isNew": true,
+          "discount": 20,
+          "details": "This Yellow diamond Necklace showcases Peacock inspired artistry with fine detailing and superior craftsmanship, designed for elegant occasions and timeless appeal, making it a perfect luxury statement piece. A perfect diamond jewellery.",
+          "weight": "19.0",
+          "gold": "18KT",
+          "diamonds": "SI-GH",
+          "trending": true,
           "qty": 1
         }
       ],
-      "total": 259,
+      "total": 199,
       "address": {
-        "name": "ryucijcd",
-        "phone": "9678456756",
-        "pincode": "565644",
-        "city": "kovai",
-        "address": "dfdfdhsfdsfgsdjgfhgfdhsfbwhfbfsdfbjsdk"
+        "name": "shiyas",
+        "phone": "9895606599",
+        "pincode": "645765",
+        "city": "coimbatore",
+        "address": "palliyalih"
       },
       "status": "Placed",
-      "date": "2026-09-03T10:45:57.811Z",
-      "id": "zi_bDWXiuic"
+      "date": "2026-10-06T10:20:12.503Z",
+      "id": "ltC5RSVS8p0"
     }
   ],
+  "Addresses": [],
   "products": [
     {
       "id": "1",
-      "name": "Gold Necklace",
-      "price": 199,
-      "category": "necklace",
-      "image": "/IMG-1.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "2",
-      "name": "Gold Necklace",
-      "price": 259,
-      "category": "necklace",
-      "image": "/IMG-2.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "3",
-      "name": "Gold Necklace",
-      "price": 299,
-      "category": "necklace",
-      "image": "/IMG-3.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "4",
-      "name": "Gold Necklace",
-      "price": 199,
-      "category": "necklace",
-      "image": "/IMG-7.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "5",
-      "name": "Gold Necklace",
-      "price": 399,
-      "category": "necklace",
-      "image": "/IMG-5.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "6",
-      "name": "Gold Necklace",
-      "price": 170,
-      "category": "necklace",
-      "image": "/IMG-6.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "7",
-      "name": "Gold Necklace",
-      "price": 179,
-      "category": "necklace",
-      "image": "/IMG-7.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "8",
-      "name": "Gold Necklace",
-      "price": 349,
-      "category": "necklace",
-      "image": "/IMG_8.HEIC",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "9",
-      "name": "Gold Necklace",
-      "price": 299,
-      "category": "necklace",
-      "image": "/IMG-9.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "10",
-      "name": "Gold Necklace",
-      "price": 188,
-      "category": "necklace",
-      "image": "/IMG-10.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "11",
-      "name": "Gold Necklace",
-      "price": 299,
-      "category": "necklace",
-      "image": "/IMG-11.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "12",
-      "name": "Gold Necklace",
-      "price": 399,
-      "category": "necklace",
-      "image": "/IMG-12.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "13",
-      "name": "Gold Necklace",
-      "price": 169,
-      "category": "necklace",
-      "image": "/IMG-13.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "14",
-      "name": "Gold Necklace",
-      "price": 155,
-      "category": "necklace",
-      "image": "/IMG-14.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "15",
-      "name": "Gold Necklace",
-      "price": 189,
-      "category": "necklace",
-      "image": "/IMG-15.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "16",
-      "name": "Gold Necklace",
-      "price": 199,
-      "category": "necklace",
-      "image": "/IMG-16.JPG.jpeg",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "17",
-      "name": "Gold Necklace",
-      "price": 199,
-      "category": "necklace",
-      "image": "/IMG-17.PNG",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "18",
-      "name": "Gold Necklace",
-      "price": 189,
-      "category": "necklace",
-      "image": "/IMG-18.PNG",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "19",
-      "name": "Gold Necklace",
-      "price": 169,
-      "category": "necklace",
-      "image": "/IMG-19.PNG",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    },
-    {
-      "id": "20",
-      "name": "Gold Necklace",
-      "price": 179,
-      "category": "necklace",
-      "image": "/IMG-20.PNG",
-      "description": "Beautiful traditional gold necklace",
-      "stock": 10
-    }
-  ],
-  "product": [
-    {
-      "id": "1",
-      "name": "Gold Necklace",
+      "name": "Pearl Drop Pendant Necklace",
       "category": "necklace",
       "price": 199,
       "oldPrice": 250,
@@ -263,11 +60,16 @@
       "rating": 4,
       "reviews": 120,
       "isNew": true,
-      "discount": 20
+      "discount": 20,
+      "details": "This Yellow diamond Necklace showcases Peacock inspired artistry with fine detailing and superior craftsmanship, designed for elegant occasions and timeless appeal, making it a perfect luxury statement piece. A perfect diamond jewellery.",
+      "weight": "19.0",
+      "gold": "18KT",
+      "diamonds": "SI-GH",
+      "trending": true
     },
     {
       "id": "2",
-      "name": "Gold Necklace",
+      "name": "Charm Station Necklace",
       "category": "necklace",
       "price": 199,
       "oldPrice": 250,
@@ -275,11 +77,16 @@
       "rating": 4,
       "reviews": 120,
       "isNew": true,
-      "discount": 20
+      "discount": 20,
+      "details": "This Yellow diamond Necklace showcases Peacock inspired artistry with fine detailing and superior craftsmanship, designed for elegant occasions and timeless appeal, making it a perfect luxury statement piece. A perfect diamond jewellery.",
+      "weight": "19.0",
+      "gold": "18KT",
+      "diamonds": "SI-GH",
+      "trending": true
     },
     {
       "id": "3",
-      "name": "Gold Necklace",
+      "name": "Layered Bow Pendant Necklace",
       "category": "necklace",
       "price": 199,
       "oldPrice": 250,
@@ -287,11 +94,16 @@
       "rating": 4,
       "reviews": 120,
       "isNew": true,
-      "discount": 20
+      "discount": 20,
+      "details": "This Yellow diamond Necklace showcases Peacock inspired artistry with fine detailing and superior craftsmanship, designed for elegant occasions and timeless appeal, making it a perfect luxury statement piece. A perfect diamond jewellery.",
+      "weight": "19.0",
+      "gold": "18KT",
+      "diamonds": "SI-GH",
+      "trending": true
     },
     {
       "id": "4",
-      "name": "Gold Necklace",
+      "name": "Bow Pendant Necklace",
       "category": "necklace",
       "price": 199,
       "oldPrice": 250,
@@ -299,11 +111,16 @@
       "rating": 4,
       "reviews": 120,
       "isNew": true,
-      "discount": 20
+      "discount": 20,
+      "details": "This Yellow diamond Necklace showcases Peacock inspired artistry with fine detailing and superior craftsmanship, designed for elegant occasions and timeless appeal, making it a perfect luxury statement piece. A perfect diamond jewellery.",
+      "weight": "19.0",
+      "gold": "18KT",
+      "diamonds": "SI-GH",
+      "trending": true
     },
     {
       "id": "5",
-      "name": "Gold Necklace",
+      "name": "Rectangular Pendant Necklace",
       "category": "necklace",
       "price": 199,
       "oldPrice": 250,
@@ -311,11 +128,16 @@
       "rating": 4,
       "reviews": 120,
       "isNew": true,
-      "discount": 20
+      "discount": 20,
+      "details": "This Yellow diamond Necklace showcases Peacock inspired artistry with fine detailing and superior craftsmanship, designed for elegant occasions and timeless appeal, making it a perfect luxury statement piece. A perfect diamond jewellery.",
+      "weight": "19.0",
+      "gold": "18KT",
+      "diamonds": "SI-GH",
+      "trending": true
     },
     {
       "id": "6",
-      "name": "Gold Necklace",
+      "name": "Floral Charm Necklace — flower",
       "category": "necklace",
       "price": 199,
       "oldPrice": 250,
@@ -323,23 +145,33 @@
       "rating": 4,
       "reviews": 120,
       "isNew": true,
-      "discount": 20
+      "discount": 20,
+      "details": "This Yellow diamond Necklace showcases Peacock inspired artistry with fine detailing and superior craftsmanship, designed for elegant occasions and timeless appeal, making it a perfect luxury statement piece. A perfect diamond jewellery.",
+      "weight": "19.0",
+      "gold": "18KT",
+      "diamonds": "SI-GH",
+      "trending": true
     },
     {
       "id": "7",
       "name": "Gold Necklace",
-      "category": "necklace",
+      "category": "Four-Leaf Clover Necklace",
       "price": 199,
       "oldPrice": 250,
       "image": "/IMG-5.JPG.jpeg",
       "rating": 4,
       "reviews": 120,
       "isNew": true,
-      "discount": 20
+      "discount": 20,
+      "details": "This Yellow diamond Necklace showcases Peacock inspired artistry with fine detailing and superior craftsmanship, designed for elegant occasions and timeless appeal, making it a perfect luxury statement piece. A perfect diamond jewellery.",
+      "weight": "19.0",
+      "gold": "18KT",
+      "diamonds": "SI-GH",
+      "trending": true
     },
     {
       "id": "8",
-      "name": "Gold Necklace",
+      "name": "Clover Pendant Necklace",
       "category": "necklace",
       "price": 199,
       "oldPrice": 250,
@@ -347,51 +179,789 @@
       "rating": 4,
       "reviews": 120,
       "isNew": true,
-      "discount": 20
+      "discount": 20,
+      "details": "This Yellow diamond Necklace showcases Peacock inspired artistry with fine detailing and superior craftsmanship, designed for elegant occasions and timeless appeal, making it a perfect luxury statement piece. A perfect diamond jewellery.",
+      "weight": "19.0",
+      "gold": "18KT",
+      "diamonds": "SI-GH",
+      "trending": true
+    },
+    {
+      "id": "9",
+      "price": 199,
+      "oldPrice": 299,
+      "name": "Bow Pendant Necklace",
+      "category": "Necklace",
+      "image": "/IMG-1.JPG.jpeg",
+      "images": [
+        "/IMG-1.JPG.jpeg",
+        "/IMG-2.JPG.jpeg "
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "10",
+      "price": 259,
+      "oldPrice": 350,
+      "name": "Crescent Pendant Necklace",
+      "category": "Necklace",
+      "image": "/IMG-2.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "11",
+      "name": "Four-Leaf Clover Necklace",
+      "price": 299,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-3.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "12",
+      "name": "Teardrop Pendant Necklace",
+      "price": 199,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-7.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "13",
+      "name": "Four Leaf Clover Necklace",
+      "price": 399,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-5.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "14",
+      "name": "Double Heart Pendant Necklace",
+      "price": 170,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-6.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "15",
+      "name": "Teardrop Pendant Necklace",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-7.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "16",
+      "name": "Floral Charm Pendant Necklace",
+      "price": 299,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-9.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "17",
+      "name": "Floral Pendant Necklace",
+      "price": 188,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-10.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "18",
+      "name": "Rectangular Zircon Pendant Necklace",
+      "price": 299,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-11.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "19",
+      "name": "Infinity Pendant Necklace",
+      "price": 399,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-12.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "20",
+      "name": "Bow Pendant Necklace",
+      "price": 169,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-13.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "21",
+      "name": "Charm Drop Necklace",
+      "price": 155,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-14.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "22",
+      "name": "Layered Chain Necklace",
+      "price": 189,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-15.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "23",
+      "name": "Station Necklace",
+      "price": 199,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-16.JPG.jpeg",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "24",
+      "name": "Gemstone Station Necklace",
+      "price": 199,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-17.PNG",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "25",
+      "name": "Heart Pendant Necklace",
+      "price": 189,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-18.PNG",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "26",
+      "name": "Minimal V Pendant Necklace",
+      "price": 169,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-19.PNG",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "27",
+      "name": "Solitaire Pendant Necklace",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "Necklace",
+      "image": "/IMG-20.PNG",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "28",
+      "name": "Floral Cluster Ring",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "rings",
+      "image": "/Ring1.jpg",
+      "images": [
+        "/Ring1-1.jpg",
+        "/Ring1-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "29",
+      "name": "Swirl Design Ring",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "rings",
+      "image": "/Ring2.jpg",
+      "images": [
+        "/Ring2-1.jpg",
+        "/Ring2-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "30",
+      "name": "Star & Pavé Ring",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "rings",
+      "image": "/Ring3.jpg",
+      "images": [
+        "/Ring3-1.jpg",
+        "/Ring3-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "31",
+      "name": "Floral Cluster Ring",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "rings",
+      "image": "/Ring4.jpg",
+      "images": [
+        "/Ring4-1.jpg",
+        "/Ring4-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "32",
+      "name": "Infinity & Flower Ring",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "rings",
+      "image": "/Ring5.jpg",
+      "images": [
+        "/Ring5-1.jpg",
+        "/Ring5-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "33",
+      "name": "V-Shaped Bridal Ring",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "rings",
+      "image": "/Ring6.jpg",
+      "images": [
+        "/Ring6-1.jpg",
+        "/Ring6-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "34",
+      "name": "Ruby & Diamond Band Ring",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "rings",
+      "image": "/Ring7.jpg",
+      "images": [
+        "/Ring7-1.jpg",
+        "/Ring7-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "35",
+      "name": "Diamond Cluster Band Ring",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "rings",
+      "image": "/Ring8.jpg",
+      "images": [
+        "/Ring8-1.jpg",
+        "/Ring8-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "36",
+      "name": "Double Oval Diamond Ring",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "rings",
+      "image": "/Ring9.jpg",
+      "images": [
+        "/Ring9-1.jpg",
+        "/Ring9-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "37",
+      "name": "Wave Diamond Ring",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "rings",
+      "image": "/Ring10.jpg",
+      "images": [
+        "/Ring10-1.jpg",
+        "/Ring10-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "38",
+      "name": "Pear-Shaped Halo Ring",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "rings",
+      "image": "/Ring11.jpg",
+      "images": [
+        "/Ring11-1.jpg",
+        "/Ring11-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "39",
+      "name": "Sunburst Cluster Ring",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "rings",
+      "image": "/Ring12.jpg",
+      "images": [
+        "/Ring12-1.jpg",
+        "/Ring12-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "40",
+      "name": "Floral & Infinity Ring",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "rings",
+      "image": "/Ring13.jpg",
+      "images": [
+        "/Ring13-1.jpg",
+        "/Ring13-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "41",
+      "name": "Pearl Drop Chandelier Earrings",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "earrings",
+      "image": "/Erri1.jpg",
+      "images": [
+        "/Erri1-1.jpg",
+        "/Erri1-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "42",
+      "name": "Red Pear-Shaped Gemstone Earrings",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "earrings",
+      "image": "/Erri2.jpg",
+      "images": [
+        "/Erri2-1.jpg",
+        "/Erri2-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "43",
+      "name": "Sunburst Stud Earrings",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "earrings",
+      "image": "/Erri3.jpg",
+      "images": [
+        "/Erri3-1.jpg",
+        "/Erri3-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "44",
+      "name": "Floral Pearl Drop Earrings",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "earrings",
+      "image": "/Erri4.jpg",
+      "images": [
+        "/Erri4-1.jpg",
+        "/Erri4-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "45",
+      "name": "Long Chain Drop Earrings",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "earrings",
+      "image": "/Erri5.jpg",
+      "images": [
+        "/Erri5-1.jpg",
+        "/Erri5-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "46",
+      "name": "Floral Green Emerald Drop Earrings",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "earrings",
+      "image": "/Erri6.jpg",
+      "images": [
+        "/Erri6-1.jpg",
+        "/Erri6-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "47",
+      "name": "Emerald Chandelier Earrings",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "earrings",
+      "image": "/Erri7.jpg",
+      "images": [
+        "/Erri7-1.jpg",
+        "/Erri7-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "48",
+      "name": "Long Geometric Drop Earrings",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "earrings",
+      "image": "/Erri8.jpg",
+      "images": [
+        "/Erri8-1.jpg",
+        "/Erri8-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "49",
+      "name": "Crystal Chandelier Earrings",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "earrings",
+      "image": "/Erri9.jpg",
+      "images": [
+        "/Erri9-1.jpg",
+        "/Erri9-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "50",
+      "name": "Blue Sapphire Drop Earrings",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "earrings",
+      "image": "/Erri10.jpg",
+      "images": [
+        "/Erri10-1.jpg",
+        "/Erri10-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "51",
+      "name": "Rose Gold Diamond Bracelet",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "bracelets",
+      "image": "/br1.jpg",
+      "images": [
+        "/br1-1.jpg",
+        "/br1-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "52",
+      "name": "Rose Gold Tennis Bracelet",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "bracelets",
+      "image": "/br2.jpg",
+      "images": [
+        "/br2-1.jpg.jpg",
+        "/br2-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "53",
+      "name": "Rose Gold Diamond Tennis Bracelet",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "bracelets",
+      "image": "/br3.jpg",
+      "images": [
+        "/br3-1.jpg",
+        "/br3-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "54",
+      "name": "Rose Gold Diamond Bangle",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "bracelets",
+      "image": "/br4.jpg",
+      "images": [
+        "/br4-1.jpg",
+        "/br4-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "55",
+      "name": "Infinity Chain Bracelet",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "bracelets",
+      "image": "/br5.jpg",
+      "images": [
+        "/br5-1.jpg",
+        "/br5-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "56",
+      "name": "Diamond-Cut Gold Bangles",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "bangles",
+      "image": "/ban1.jpg",
+      "images": [
+        "/ban1-1.jpg",
+        "/ban1-2.jpg.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "57",
+      "name": "Gold Diamond Bangle",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "bangles",
+      "image": "/ban2.jpg",
+      "images": [
+        "/ban2-1.jpg",
+        "/ban2-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "58",
+      "name": "Ruby & Diamond Bangle",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "bangles",
+      "image": "/ban3.jpg",
+      "images": [
+        "/ban3-1.jpg",
+        "/ban3-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "59",
+      "name": "Floral Motif Bangle",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "bangles",
+      "image": "/ban4.jpg",
+      "images": [
+        "/ban4-1.jpg",
+        "/ban4-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "60",
+      "name": "Double-Line Diamond Bangle",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "bangles",
+      "image": "/ban5.jpg",
+      "images": [
+        "/ban5-1.jpg",
+        "/ban5-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "61",
+      "name": "Rose Gold Drop Bangles",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "bangles",
+      "image": "/ban6.jpg",
+      "images": [
+        "/ban6-1.jpg",
+        "/ban6-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "62",
+      "name": "Gold & Diamond Chain Bangles",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "bangles",
+      "image": "/ban7.jpg",
+      "images": [
+        "/ban7-1.jpg",
+        "/ban7-2.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "63",
+      "name": "Gold & Diamond Chain Bangles",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "anklets",
+      "image": "/an1.webp",
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "64",
+      "name": "Gold & Diamond Chain Bangles",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "anklets",
+      "image": "/an2.jpg",
+      "images": [
+        "/an2-1.jpg"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "65",
+      "name": "Gold & Diamond Chain Bangles",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "anklets",
+      "image": "/an3.webp",
+      "images": [
+        "/an3-1.webp",
+        "/an3-2.webp"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "66",
+      "name": "Gold & Diamond Chain Bangles",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "anklets",
+      "image": "/an4.webp",
+      "images": [
+        "/an4-1.webp",
+        "/an4-2.webp"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "67",
+      "name": "Gold & Diamond Chain Bangles",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "anklets",
+      "image": "/an5.webp",
+      "images": [
+        "/an5-1.webp",
+        "/an5-2.webp"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "68",
+      "name": "Gold & Diamond Chain Bangles",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "anklets",
+      "image": "/an6.webp",
+      "images": [
+        "/an6-1.webp",
+        "/an6-2.webp"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
+    },
+    {
+      "id": "69",
+      "name": "Gold & Diamond Chain Bangles",
+      "price": 179,
+      "oldPrice": 350,
+      "category": "anklets",
+      "image": "/an7.webp",
+      "images": [
+        "/an7-1.webp"
+      ],
+      "description": "Beautiful traditional gold necklace",
+      "stock": 10
     }
   ],
-  "categories": [
-    {
-      "id": "1",
-      "name": "Necklaces",
-      "key": "necklace",
-      "icon": "📿",
-      "desc": "Timeless gold necklaces for every occasion"
-    },
-    {
-      "id": "2",
-      "name": "Earrings",
-      "key": "earring",
-      "icon": "💎",
-      "desc": "Elegant earrings to elevate your style"
-    },
-    {
-      "id": "3",
-      "name": "Bangles",
-      "key": "bangle",
-      "icon": "⭕",
-      "desc": "Traditional and modern bangles"
-    },
-    {
-      "id": "4",
-      "name": "Bracelet",
-      "key": "bracelet",
-      "icon": "🔗",
-      "desc": "Delicate bracelets crafted with care"
-    },
-    {
-      "id": "5",
-      "name": "Rings",
-      "key": "ring",
-      "icon": "💍",
-      "desc": "Statement rings for every hand"
-    },
-    {
-      "id": "6",
-      "name": "New Arrivals",
-      "key": "new",
-      "icon": "✨",
-      "desc": "The latest additions to our collection"
-    }
-  ]
+  "$schema": "./node_modules/json-server/schema.json"
 }

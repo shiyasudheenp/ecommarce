@@ -1,46 +1,3 @@
-// import React, { createContext,useState } from 'react'
-// import { useNavigate } from 'react-router-dom';
-
-//  export const cartContext = createContext()
-
-// function CartProvider({children}) {
-//     const [cart,setCart]=useState([]);
-
-//     const navigate = useNavigate();
-
-//     const AddToCart=(product)=>{
-//       // current user for checking in local storage
-//       const User = localStorage.getItem("user");
-
-//       // user not login
-//       if(!User){
-
-//         alert("Please Login First");
-
-//         navigate("/login")
-
-//         return;
-//       }
-//       // already login for user then add to products
-//         setCart([...cart,product]);
-
-//         alert("Product Added To Cart")
-//         navigate("/cart")
-//     };
-//   return (
-//     <cartContext.Provider
-//     value={{cart,AddToCart}}
-//     >
-//       {children}
-
-//     </cartContext.Provider>
-//   );
-// }
-
-// export default CartProvider;
-
-
-
 import React, { createContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
@@ -69,7 +26,7 @@ function CartProvider({ children }) {
       return [...prev, { ...product, qty: 1 }];
     });
 
-    navigate("/cart");
+    // navigate("/cart");
   };
 
   const removeFromCart = (id) => {

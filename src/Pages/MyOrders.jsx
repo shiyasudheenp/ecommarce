@@ -7,7 +7,7 @@ function MyOrders() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/oders")
+    axios.get("http://localhost:3001/orders")
       .then((res) => {
         // Puthiya order mukalil varan reverse cheyyunnu
         setOrders(res.data.reverse());

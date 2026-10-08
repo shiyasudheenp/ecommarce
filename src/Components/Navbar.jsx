@@ -1,182 +1,7 @@
-// import { Link } from "react-router-dom"
-// import Logo1 from "../assets/Logo1.png"
-// import { FaHeart } from "react-icons/fa";
-// import { GiShoppingCart } from "react-icons/gi";
-// import { useNavigate } from "react-router-dom";
-// import { useContext, useState } from "react";
-// import { useEffect } from "react";
-// import { useLocation } from "react-router-dom";
-// import { cartContext } from "../Pages/CartProvider";
-// import { wishlistContext } from "../Pages/WishlistProvider";
-
-// function Navbar() {
-
-//   const navigate = useNavigate();
-
- 
-//   // current login user
-//   const [user,setUser] = useState(localStorage.getItem("user"));
-//   console.log(user)
-
-//   const { wishlist } = useContext(wishlistContext);
-
-//   const {cart} =useContext(cartContext);
-
-//   // change to page for check localstorage
-
-//   useEffect(()=>{
-//     const currentuser = localStorage.getItem("user");
-
-//     setUser(currentuser);
-//   },[location.pathname]);
-
-//   const handleLogout = ()=>{
-//     // user remove the login
-//     localStorage.removeItem("user");
-
-//     // update to navbar
-
-//     setUser(null);
-
-//     alert("Logout successful");
-
-//     // move to login page
-
-//     navigate("/login")
-//   };
-
-//      // search option
-//   const [showsearch,setShowsearch]=useState(false);
-//   const [searchTerm,setSearchTerm]=useState("");
-
-//   const handlesearch = (e)=>{
-//     e.preventDefault();
-//     if(searchTerm.trim() === "") return;
-//     navigate(`/shop?searh=${encodeURIComponent(searchTerm)}`);
-//     setSearchTerm("");
-//     setShowsearch(false);
-//   };
-  
-//   return (
-//     <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
-//       <div className="flex justify-between  items-center h-17 w-full px-0">
-        
-//         {/* Logo */}
-//         <Link to="/">
-//           <img src={Logo1} alt="SHA JEWELS" className="h-25  w-45 mt-3  object-contain" />
-//         </Link>
-
-//         {/* Nav Links */}
-//         <ul className="flex items-center gap-0 ml-1 pl-55 list-none mx-auto p-1">
-//           <li>
-//             <Link to="/" className="px-4 py-2 text-sm text-black-500 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-all duration-200 relative group block">
-//               HOME
-//               <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 rounded-full"></span>
-//             </Link>
-//           </li>
-//           <li>
-//             <Link to="/Shop" className="px-4 py-2 text-sm text-black-500 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-all duration-200 relative group block">
-//               SHOP
-//               <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 rounded-full"></span>
-//             </Link>
-//           </li>
-//           <li>
-//             <Link to="/Collection" className="px-4 py-2 text-sm text-black-500 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-all duration-200 relative group block">
-//               COLLECTION
-//               <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 rounded-full"></span>
-//             </Link>
-//           </li>
-//           <li>
-//             <Link to="/About" className="px-4 py-2 text-sm text-black-500 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-all duration-200 relative group block">
-//               ABOUT
-//               <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 rounded-full"></span>
-//             </Link>
-//           </li>
-//           <li>
-//             <Link to="/contact" className="px-4 py-2 text-sm text-black-500 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-all duration-200 relative group block">
-//               CONTACT
-//               <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 rounded-full"></span>
-//             </Link>
-//           </li>
-//         </ul>
-
-//         {/* Right side icons */}
-
-//         <div className="flex items-center gap-5 mr-5">
-//           {/* serch */}
-//            {showsearch ? (
-//             <form onSubmit={handlesearch} className="flex items-center">
-//               <input
-//                 type="text"
-//                 autoFocus
-//                 value={searchTerm}
-//                 onChange={(e) => setSearchTerm(e.target.value)}
-//                 onBlur={() => setShowsearch(false)}
-//                 placeholder="Search jewelry..."
-//                 className="border border-gray-200 rounded-md px-3 py-1.5 text-sm w-40 sm:w-56 focus:outline-none focus:border-yellow-600"
-//               />
-//             </form>
-//           ) : (
-//             <button onClick={() => setShowsearch(true)}>🔍</button>
-//           )}
-          
-//           {/* wishlist */}
-//           <Link to="/wishlist" className="relative">
-//           <FaHeart className="text-xl hover:text-yellow-600" />
-//           {wishlist.length>0 &&(
-//             <span className="absolute -top-2 -right-2 bg-yellow-600 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
-//               {wishlist.length}
-//             </span>
-//           )}
-//           </Link>
-//           {/* cart */}
-//           <Link to= "/cart" className="relative">
-//           <GiShoppingCart className="relative text-xl hover:text-yellow-600" />
-//           {cart.length > 0 &&(
-//                 <span className="absolute -top-2 -right-2 bg-yellow-600 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
-//                   {cart.length}
-//                </span>
-//           )}
-//           </Link>
-//           {/* sign in */}
-//           <Link to="/login">
-//           {/* login / logout */}
-//           {user ?(
-//           <button
-//             onClick={handleLogout} 
-//             className="bg-yellow-600 hover:bg-yellow-300 text-white px-5 py-2 rounded-md font-medium">
-//             LOGOUT
-//               </button>
-//             ):(
-//               <button
-//               onClick={()=> navigate("/login")}
-//               className="bg-yellow-600 hover:bg-yellow-300 text-white px-5 py-2 rounded-md font-medium">
-//                 SIGN IN
-//               </button>
-//             )}
-//           </Link>
-
-//         </div>
-
-//       </div>
-//     </nav>
-//   )
-// }
-
-// export default Navbar;
-
-
-
-
-
-
-
-
-
 
 import { Link, useNavigate, useLocation } from "react-router-dom"
 import Logo1 from "../assets/Logo1.png"
-import { FaHeart, FaRegUserCircle } from "react-icons/fa";
+import { FaHeart, FaRegUserCircle, FaSearch } from "react-icons/fa";
 import { GiShoppingCart } from "react-icons/gi";
 import { useContext, useState, useEffect, useRef } from "react";
 import { cartContext } from "../Pages/CartProvider";
@@ -206,23 +31,20 @@ function Navbar() {
     navigate("/login")
   };
 
-  // search option
-  const [showsearch, setShowsearch] = useState(false);
+  // search
   const [searchTerm, setSearchTerm] = useState("");
 
-  const handlesearch = (e) => {
-    e.preventDefault();
-    if (searchTerm.trim() === "") return;
-    navigate(`/shop?searh=${encodeURIComponent(searchTerm)}`);
-    setSearchTerm("");
-    setShowsearch(false);
-  };
+ const handlesearch = (e) => {
+  e.preventDefault();
+  if (searchTerm.trim() === "") return;
+  navigate(`/Shop?search=${encodeURIComponent(searchTerm)}`);
+  setSearchTerm("");
+};
 
   // profile popup
   const [showProfile, setShowProfile] = useState(false);
   const profileRef = useRef(null);
 
-  // close popup when clicking outside it
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (profileRef.current && !profileRef.current.contains(e.target)) {
@@ -235,84 +57,52 @@ function Navbar() {
 
   return (
     <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
-      <div className="flex justify-between  items-center h-17 w-full px-0">
-        
+
+      {/* TOP ROW: Logo + Search + Icons */}
+      <div className="flex items-center justify-between gap-6 px-6 md:px-10 h-20">
+
         {/* Logo */}
-        <Link to="/">
-          <img src={Logo1} alt="SHA JEWELS" className="h-25  w-45 mt-3  object-contain" />
+        <Link to="/" className="flex-shrink-0">
+          <img src={Logo1} alt="SHA JEWELS" className="h-25 w-auto object-contain" />
         </Link>
 
-        {/* Nav Links */}
-        <ul className="flex items-center gap-0 ml-1 pl-55 list-none mx-auto p-1">
-          <li>
-            <Link to="/" className="px-4 py-2 text-sm text-black-500 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-all duration-200 relative group block">
-              HOME
-              <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 rounded-full"></span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/Shop" className="px-4 py-2 text-sm text-black-500 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-all duration-200 relative group block">
-              SHOP
-              <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 rounded-full"></span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/Collection" className="px-4 py-2 text-sm text-black-500 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-all duration-200 relative group block">
-              COLLECTION
-              <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 rounded-full"></span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/About" className="px-4 py-2 text-sm text-black-500 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-all duration-200 relative group block">
-              ABOUT
-              <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 rounded-full"></span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" className="px-4 py-2 text-sm text-black-500 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-all duration-200 relative group block">
-              CONTACT
-              <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 rounded-full"></span>
-            </Link>
-          </li>
-        </ul>
+        {/* Search bar */}
+        <form onSubmit={handlesearch} className="flex-1 max-w-xl hidden sm:block">
+          <div className="relative">
+            <input
+              type="text"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              placeholder="Search jewelry..."
+              className="w-full border border-gray-200 rounded-md pl-4 pr-10 py-2.5 text-sm focus:outline-none focus:border-yellow-600"
+            />
+            <button type="submit" className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-yellow-600">
+              <FaSearch size={14} />
+            </button>
+          </div>
+        </form>
 
-        {/* Right side icons */}
+        {/* Icons */}
+        <div className="flex items-center gap-5 flex-shrink-0">
 
-        <div className="flex items-center gap-5 mr-5">
-          {/* serch */}
-           {showsearch ? (
-            <form onSubmit={handlesearch} className="flex items-center">
-              <input
-                type="text"
-                autoFocus
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                onBlur={() => setShowsearch(false)}
-                placeholder="Search jewelry..."
-                className="border border-gray-200 rounded-md px-3 py-1.5 text-sm w-40 sm:w-56 focus:outline-none focus:border-yellow-600"
-              />
-            </form>
-          ) : (
-            <button onClick={() => setShowsearch(true)}>🔍</button>
-          )}
-          
           {/* wishlist */}
           <Link to="/wishlist" className="relative">
-          <FaHeart className="text-xl hover:text-yellow-600" />
-          {wishlist.length>0 &&(
-            <span className="absolute -top-2 -right-2 bg-yellow-600 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
-              {wishlist.length}
-            </span>
-          )}
+            <FaHeart className="text-xl hover:text-yellow-600" />
+            {wishlist.length > 0 && (
+              <span className="absolute -top-2 -right-2 bg-yellow-600 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
+                {wishlist.length}
+              </span>
+            )}
           </Link>
+
           {/* cart */}
-          <Link to= "/cart" className="relative">
-          <GiShoppingCart className="relative text-xl hover:text-yellow-600" />
-          {cart.length > 0 &&(
-                <span className="absolute -top-2 -right-2 bg-yellow-600 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
-                  {cart.length}
-               </span>
-          )}
+          <Link to="/cart" className="relative">
+            <GiShoppingCart className="relative text-xl hover:text-yellow-600" />
+            {cart.length > 0 && (
+              <span className="absolute -top-2 -right-2 bg-yellow-600 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
+                {cart.length}
+              </span>
+            )}
           </Link>
 
           {/* profile icon + popup */}
@@ -324,32 +114,27 @@ function Navbar() {
             {showProfile && (
               <div className="absolute right-0 mt-3 w-64 bg-white border border-gray-100 rounded-md shadow-lg p-5 z-50">
                 {user ? (
-                  <>
-                    <p className="text-xs text-gray-400 mb-3">Signed in as</p>
-                    <p className="font-semibold mb-4">{user}</p>
+                  <div className="text-center">
+                    <p className="text-xs text-gray-400 mb-1">Welcome</p>
+                    <p className="font-semibold mb-5">
+                      Hi {JSON.parse(localStorage.getItem("profile") || "{}").name || "there"}
+                    </p>
 
-                    <Link
-                      to="/my-orders"
-                      onClick={() => setShowProfile(false)}
-                      className="block text-sm py-2 px-1 hover:bg-gray-50 rounded-md transition-all"
-                    >
-                      My Orders
-                    </Link>
-                    <Link
-                      to="/wishlist"
-                      onClick={() => setShowProfile(false)}
-                      className="block text-sm py-2 px-1 hover:bg-gray-50 rounded-md transition-all"
-                    >
-                      My Wishlist
-                    </Link>
-
-                    <button
-                      onClick={handleLogout}
-                      className="w-full mt-3 bg-yellow-600 hover:bg-yellow-700 text-white py-2 rounded-md font-medium text-sm transition-all"
-                    >
-                      Logout
-                    </button>
-                  </>
+                    <div className="flex gap-3">
+                      <button
+                        onClick={() => { setShowProfile(false); navigate("/profile"); }}
+                        className="flex-1 border border-gray-300 hover:border-yellow-600 py-2 rounded-md text-sm font-medium transition-all"
+                      >
+                        My Account
+                      </button>
+                      <button
+                        onClick={handleLogout}
+                        className="flex-1 bg-yellow-600 hover:bg-yellow-700 text-white py-2 rounded-md text-sm font-medium transition-all"
+                      >
+                        Logout
+                      </button>
+                    </div>
+                  </div>
                 ) : (
                   <>
                     <h3 className="text-center font-semibold mb-1">MY ACCOUNT</h3>
@@ -377,8 +162,49 @@ function Navbar() {
           </div>
 
         </div>
-
       </div>
+
+            {/* BOTTOM ROW: Nav Links */}
+      <div className="bg-[#f3e8d8] border-t border-gray-200">
+        <ul className="flex items-center justify-center gap-8 list-none py-2.5">
+           <li>
+            <Link to="/shop" className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all">
+              All
+            </Link>
+          </li>
+          <li>
+            <Link to="/shop/Necklace" className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all">
+              Necklace
+            </Link>
+          </li>
+          <li>
+            <Link to="/Shop/earrings" className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all">
+              Earrings
+            </Link>
+          </li>
+          <li>
+            <Link to="/shop/bangles" className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all">
+              Bangles
+            </Link>
+          </li>
+          <li>
+            <Link to="/shop/bracelets" className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all">
+              Bracelets
+            </Link>
+          </li>
+          <li>
+            <Link to="/shop/rings" className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all">
+              Rings
+            </Link>
+          </li>
+           <li>
+            <Link to="/shop/anklets" className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all">
+              Anklets
+            </Link>
+          </li>
+        </ul>
+      </div>
+
     </nav>
   )
 }
