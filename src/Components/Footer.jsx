@@ -7,15 +7,15 @@ import { FaClock } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-black text-white px-8 py-12">
+        <footer className="bg-black text-white px-4 md:px-8 py-8 md:py-12">
 
       {/* TOP SECTION */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
 
         {/* BRAND */}
         <div className="max-w-sm space-y-4">
            <Link to="/" className="">
-           <img src={Logo2} alt="Logo1" className=""></img>
+           <img src={Logo2} alt="Shaa Jewels" className="h-16 md:h-20 w-auto object-contain" />
           </Link>
           <p className="text-gray-400 leading-relaxed">Shaa jewels is a Trusted Ornaments and Jewellery Brand Dedicated to Bringing Elegance,Quality,and timeless Beauty to Every Customer
           </p>
@@ -38,13 +38,13 @@ function Footer() {
         <div className="space-y-3">
           <h3 className="text-yellow-500 font-semibold tracking-widest">SHOP</h3>
           <ul className="space-y-2 text-gray-400">
-            <li><Link to="/Shop">Necklaces</Link></li>
-            <li><Link to="/Shop">Earrings</Link></li>
-            <li><Link to="/Shop">Bangles</Link></li>
-            <li><Link to="/Shop">Bracelet</Link></li>
-            <li><Link to="/Shop">Rings</Link></li>
+            <li><Link to="/shop/necklace">Necklaces</Link></li>
+            <li><Link to="/shop/earrings">Earrings</Link></li>
+            <li><Link to="/shop/bangles">Bangles</Link></li>
+            <li><Link to="/shop/bracelets">Bracelet</Link></li>
+            <li><Link to="/shop/rings">Rings</Link></li>
+            <li><Link to="/Shop">Anklets</Link></li>
             <li><Link to="/Shop">New Arrivals</Link></li>
-            <li><Link to="/Shop?filtter=Sale">Sale</Link></li>
           </ul>
         </div>
 
@@ -52,8 +52,8 @@ function Footer() {
         <div className="space-y-3">
           <h3 className="text-yellow-500 font-semibold tracking-widest">HELP</h3>
           <ul className="space-y-2 text-gray-400">
-            <li><Link to="/Profil">My Account</Link></li>
-            <li><Link to="/Orders" >Track Order</Link></li>
+            <li><Link to="/profile">My Account</Link></li>
+            <li><Link to="/my-orders">Track Order</Link></li>
             <li>Return Policy</li>
             <li>Shipping Info</li>
             <li>Size Guide</li>
@@ -90,14 +90,14 @@ function Footer() {
       </div>
 
       {/* BOTTOM SECTION */}
-      <div className="border-t border-gray-800 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-6">
+       <div className="border-t border-gray-800 mt-8 md:mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6 text-center">
 
         <p className="text-gray-500 text-sm">
           © 2025 Shaa Jewels. All rights reserved.
         </p>
 
         {/* Payment */}
-        <div className="flex gap-4">
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4">
           <span className="border border-gray-700 px-4 py-1 rounded-md text-sm">UPI</span>
           <span className="border border-gray-700 px-4 py-1 rounded-md text-sm">Cards</span>
           <span className="border border-gray-700 px-4 py-1 rounded-md text-sm">NetBanking</span>

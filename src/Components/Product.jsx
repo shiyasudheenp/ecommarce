@@ -29,12 +29,12 @@ function Products() {
   };
 
   return (
-    <div className="px-10 py-10">
-      <h2 className="text-3xl font-bold mb-6 text-center">Trending Products</h2>
+        <div className="px-4 md:px-10 py-8 md:py-10">
+      <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">Trending Products</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
         {products.map((item) => (
-          <div key={item.id} className="relative rounded-lg p-4 shadow-md">
+                    <div key={item.id} className="relative rounded-lg p-2.5 md:p-4 shadow-md">
 
             <button
               onClick={() => toggleWishlist(item)}
@@ -47,7 +47,7 @@ function Products() {
               <img
                 src={item.image}
                 alt={item.name}
-                className="w-full h-56 object-cover rounded-md"
+                                className="w-full h-40 md:h-56 object-cover rounded-md"
               />
               <div className="mt-3">
                 <div className="flex items-baseline gap-2">
@@ -60,7 +60,7 @@ function Products() {
               </div>
             </Link>
 
-            <div className="flex gap-3 mt-4">
+                        <div className="flex flex-col md:flex-row gap-2 md:gap-3 mt-3 md:mt-4">
               {getQty(item.id) === 0 ? (
                 <button
                   onClick={() => AddToCart(item)}

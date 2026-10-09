@@ -79,8 +79,8 @@ function ProductDetail() {
   const gallery = rawGallery.map(fixImagePath);
 
   return (
-    <div className="px-6 md:px-10 py-14 max-w-5xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="px-4 md:px-10 py-8 md:py-14 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
 
         {/* LEFT - Image Gallery */}
         <div>
@@ -88,12 +88,12 @@ function ProductDetail() {
             <img
               src={gallery[activeImage]}
               alt={product.name}
-              className="w-full h-[420px] object-cover"
+             className="w-full h-72 md:h-[420px] object-cover"
             />
           </div>
 
           {gallery.length > 1 && (
-            <div className="flex gap-3">
+                  <div className="flex gap-3 overflow-x-auto">
               {gallery.map((img, index) => (
                 <button
                   key={index}
@@ -124,7 +124,7 @@ function ProductDetail() {
             </span>
           </div>
 
-          <h1 className="text-3xl font-serif mb-3">{product.name}</h1>
+           <h1 className="text-2xl md:text-3xl font-serif mb-3">{product.name}</h1>
 
           <div className="flex items-center gap-2 mb-4">
             <div className="flex text-yellow-500 text-lg">★★★★☆</div>
@@ -142,7 +142,9 @@ function ProductDetail() {
             </span>
           </div>
 
-            <p className="text-2xl text-yellow-600 font-bold">{product.gold}</p>
+                        <p className="text-2xl text-yellow-600 font-bold">
+              {typeof product.gold === "object" ? product.gold?.purity : product.gold}
+            </p>
 
           {product.description && (
             <p className="text-gray-600 leading-relaxed mb-5">
@@ -180,7 +182,7 @@ function ProductDetail() {
           <div className="flex gap-3 mb-6">
             <button
               onClick={() => AddToCart(product)}
-              className="flex-1 bg-yellow-600 hover:bg-yellow-700 text-white py-3 rounded-md font-medium transition-all"
+              className="flex-1 bg-yellow-600 hover:bg-yellow-700 text-white py-3 rounded-md font-medium text-sm md:text-base transition-all"
             >
               Add To Cart
             </button>
@@ -194,7 +196,7 @@ function ProductDetail() {
                   navigate("/login");
                 }
               }}
-              className="flex-1 bg-black hover:bg-gray-800 text-white py-3 rounded-md font-medium transition-all"
+              className="flex-1 bg-black hover:bg-gray-800 text-white py-3 rounded-md font-medium text-sm md:text-base transition-all"
             >
               BUY NOW
             </button>
@@ -229,7 +231,7 @@ function ProductDetail() {
         <div className="flex border-b border-gray-200 mb-6">
           <button
             onClick={() => setActiveTab("details")}
-            className={`px-6 py-3 text-sm font-semibold transition-all ${
+            className={`px-4 md:px-6 py-3 text-xs md:text-sm font-semibold transition-all ${
               activeTab === "details"
                 ? "bg-black text-white"
                 : "bg-gray-50 text-gray-500 hover:text-black"
@@ -251,7 +253,7 @@ function ProductDetail() {
 
         {/* 👇 IVIDE ANU TAB CONTENT VARENDATH — ith tabs-inte thazhe thanne undo nokku */}
         {activeTab === "details" ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10">
 
             {/* description always show cheyyum */}
             <div className="sm:col-span-2">

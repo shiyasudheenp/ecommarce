@@ -71,9 +71,9 @@ alert("Registration failed");
         backgroundImage:
           "url('https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?q=80')",
       }}>
-       <div className="relative z-10 bg-[#3d3d3d]/90 border border-yellow-600 rounded-3xl p-8 w-[380px] shadow-2xl">
+   <div className="relative z-10 bg-[#3d3d3d]/90 border border-yellow-600 rounded-3xl p-6 md:p-8 w-full max-w-[380px] mx-4 shadow-2xl">
 
-  <h1 className="text-4xl font-bold text-yellow-500 text-center mb-2">
+    <h1 className="text-3xl md:text-4xl font-bold text-yellow-500 text-center mb-2">
     Register
   </h1>
 
@@ -99,22 +99,24 @@ alert("Registration failed");
     className="w-full p-3 rounded-lg mb-4 outline-none bg-white"
   />
 
-  <input
-    type={showpassword ? "text":"password"}
-    name="Password"
-    placeholder="Enter Your Password"
-    autoComplete="new-password"
-    value={password}
-    onChange={(e) => setPassword(e.target.value)}
-    className="w-full p-3 rounded-lg mb-6 outline-none bg-white"
-  />
-  <button
-    type="button"
-    onClick={()=> setShowpaswword (!showpassword)}
-    className="absolute right-12 top-70 -translate-y-1/2"
+   <div className="relative mb-6">
+    <input
+      type={showpassword ? "text":"password"}
+      name="Password"
+      placeholder="Enter Your Password"
+      autoComplete="new-password"
+      value={password}
+      onChange={(e) => setPassword(e.target.value)}
+      className="w-full p-3 pr-12 rounded-lg outline-none bg-white"
+    />
+    <button
+      type="button"
+      onClick={()=> setShowpaswword(!showpassword)}
+      className="absolute right-3 top-1/2 -translate-y-1/2"
     >
       {showpassword ? "👁️" : "🙈"}
     </button>
+  </div>
 
   <button
     onClick={handleData}

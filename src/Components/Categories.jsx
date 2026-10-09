@@ -44,24 +44,24 @@ function Categories() {
       name: "Anklets",
       key: "anklets",
       image: "/col3.jpeg",
-      link: "/shop/necklace",
+      link: "/shop/anklets",
     },
   ]
 
   return (
-    <div className="bg-[#f7f4ef] py-20">
+   <div className="bg-[#f7f4ef] py-12 md:py-20">
       {/* Heading */}
       <div className="text-center">
         <p className="text-yellow-700 tracking-[5px] uppercase text-sm">
           BROWSE BY
         </p>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif mt-4">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif mt-4">
           Our Collections
         </h1>
       </div>
 
       {/* Categories Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 px-5">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-10 md:mt-16 px-4 md:px-5">
         {categories.map((item) => (
           <Link
             to={item.link}

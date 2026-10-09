@@ -69,7 +69,7 @@ function Login() {
       <div className="absolute inset-0 bg-black/70"></div>
 
       {/* Login Box */}
-      <div className="relative z-10 w-[380px] p-8 rounded-3xl
+       <div className="relative z-10 w-full max-w-[380px] mx-4 p-6 md:p-8 rounded-3xl
       bg-white/10 backdrop-blur-lg border
       border-yellow-600 shadow-2xl">
 
@@ -92,31 +92,32 @@ function Login() {
             value={email}
             autoComplete="off"
             onChange={(e)=>setEmail(e.target.value)}
-            className="p-3 rounded-lg
+            className="w-full p-3 rounded-lg
             bg-black/40 text-white
             border border-gray-600
             outline-none"
           />
 
-          <input
-            type={showpassword ? "text":"password"}
-            placeholder="Enter Password"
-            value={password}
-            autoComplete="new-password"
-            onChange={(e)=>setPassword(e.target.value)}
-            className="p-3 rounded-lg
-            bg-black/40 text-white
-            border border-gray-600
-            outline-none"
-          />
-          <button
-            type="button"
-            onClick={()=> setShowpassword(!showpassword)}
-            className="absolute right-12 top-54 -translate-y-1/2"
+            <div className="relative">
+            <input
+              type={showpassword ? "text":"password"}
+              placeholder="Enter Password"
+              value={password}
+              autoComplete="new-password"
+              onChange={(e)=>setPassword(e.target.value)}
+              className="w-full p-3 pr-12 rounded-lg
+              bg-black/40 text-white
+              border border-gray-600
+              outline-none"
+            />
+            <button
+              type="button"
+              onClick={()=> setShowpassword(!showpassword)}
+              className="absolute right-3 top-1/2 -translate-y-1/2"
             >
-               {showpassword ? "👁️" : "🙈"}
+              {showpassword ? "👁️" : "🙈"}
             </button>
-
+          </div>
           <button
             type="submit"
            className="bg-yellow-600 hover:bg-yellow-500

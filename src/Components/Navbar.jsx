@@ -7,7 +7,6 @@ import { useContext, useState, useEffect, useRef } from "react";
 import { cartContext } from "../Pages/CartProvider";
 import { wishlistContext } from "../Pages/WishlistProvider";
 
-// Bottom row-ile nav links (puthuthaayi add cheythathu)
 const navLinks = [
   { label: "All", path: "/shop" },
   { label: "Necklace", path: "/shop/necklace" },
@@ -23,7 +22,6 @@ function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // current login user
   const [user, setUser] = useState(localStorage.getItem("user"));
 
   const { wishlist } = useContext(wishlistContext);
@@ -49,7 +47,6 @@ function Navbar() {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const searchRef = useRef(null);
 
-  // suggestions-inu vendi products oru thavana fetch cheyyunnu
   useEffect(() => {
     axios
       .get("http://localhost:3001/products")
@@ -59,9 +56,7 @@ function Navbar() {
 
   const q = searchTerm.trim().toLowerCase();
 
-  // Category suggestions: typed letters kond thudangunna categories
   let categorySuggestions = [];
-  // Product suggestions: name-il ethenkilum word typed letters kond thudangunnath
   let productSuggestions = [];
 
   if (q) {
@@ -83,7 +78,6 @@ function Navbar() {
           : nameLower.split(/[^a-z0-9]+/).some((w) => w.startsWith(q));
       })
       .filter((p) => {
-        // same name repeat aavathirikkan
         if (seenNames.has(p.name)) return false;
         seenNames.add(p.name);
         return true;
@@ -116,7 +110,6 @@ function Navbar() {
     closeSuggestions();
   };
 
-  // search box-inu purath click cheythal suggestions close aavum
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (searchRef.current && !searchRef.current.contains(e.target)) {
@@ -141,83 +134,81 @@ function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Search bar (desktop-lum mobile-lum ore code, athukondu oru variable aakki)
+  const searchBox = (
+    <form ref={searchRef} onSubmit={handlesearch} className="w-full">
+      <div className="relative">
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+            setShowSuggestions(true);
+          }}
+          onFocus={() => setShowSuggestions(true)}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") closeSuggestions();
+          }}
+          placeholder="Search jewelry..."
+          autoComplete="off"
+          className="w-full border border-gray-200 rounded-md pl-4 pr-10 py-2 md:py-2.5 text-sm focus:outline-none focus:border-yellow-600"
+        />
+        <button type="submit" className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-yellow-600">
+          <FaSearch size={14} />
+        </button>
+
+        {showSuggestions && hasSuggestions && (
+          <div className="absolute left-0 right-0 top-full mt-1 bg-white border border-gray-200 rounded-md shadow-lg z-50 overflow-hidden">
+
+            {categorySuggestions.map((cat) => (
+              <button
+                key={cat}
+                type="button"
+                onClick={() => goToCategory(cat)}
+                className="w-full flex items-center justify-between px-4 py-2.5 text-sm text-left hover:bg-gray-50"
+              >
+                <span className="capitalize font-medium">{cat}</span>
+                <span className="text-xs text-gray-400">Category</span>
+              </button>
+            ))}
+
+            {productSuggestions.map((p) => (
+              <button
+                key={p.id}
+                type="button"
+                onClick={() => goToProduct(p.id)}
+                className="w-full flex items-center gap-3 px-4 py-2 text-sm text-left hover:bg-gray-50"
+              >
+                <img src={p.image} alt="" className="w-8 h-8 object-cover rounded" />
+                <span className="flex-1 truncate">{p.name}</span>
+                <span className="text-gray-500">₹{p.price}</span>
+              </button>
+            ))}
+
+          </div>
+        )}
+      </div>
+    </form>
+  );
+
   return (
     <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
 
-      {/* TOP ROW: Logo + Search + Icons */}
-      <div className="flex items-center justify-between gap-6 px-6 md:px-10 h-20">
+      {/* TOP ROW: Logo + Search (desktop) + Icons */}
+      <div className="flex items-center justify-between gap-3 md:gap-6 px-4 md:px-10 h-16 md:h-20">
 
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
-          <img src={Logo1} alt="SHA JEWELS" className="h-25 w-auto object-contain" />
+          <img src={Logo1} alt="SHA JEWELS" className="h-12 md:h-16 w-auto object-contain" />
         </Link>
 
-        {/* Search bar + suggestions */}
-        <form
-          ref={searchRef}
-          onSubmit={handlesearch}
-          className="flex-1 max-w-xl hidden sm:block"
-        >
-          <div className="relative">
-            <input
-              type="text"
-              value={searchTerm}
-              onChange={(e) => {
-                setSearchTerm(e.target.value);
-                setShowSuggestions(true);
-              }}
-              onFocus={() => setShowSuggestions(true)}
-              onKeyDown={(e) => {
-                if (e.key === "Escape") closeSuggestions();
-              }}
-              placeholder="Search jewelry..."
-              autoComplete="off"
-              className="w-full border border-gray-200 rounded-md pl-4 pr-10 py-2.5 text-sm focus:outline-none focus:border-yellow-600"
-            />
-            <button type="submit" className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-yellow-600">
-              <FaSearch size={14} />
-            </button>
-
-            {/* SUGGESTIONS DROPDOWN */}
-            {showSuggestions && hasSuggestions && (
-              <div className="absolute left-0 right-0 top-full mt-1 bg-white border border-gray-200 rounded-md shadow-lg z-50 overflow-hidden">
-
-                {categorySuggestions.map((cat) => (
-                  <button
-                    key={cat}
-                    type="button"
-                    onClick={() => goToCategory(cat)}
-                    className="w-full flex items-center justify-between px-4 py-2.5 text-sm text-left hover:bg-gray-50"
-                  >
-                    <span className="capitalize font-medium">{cat}</span>
-                    <span className="text-xs text-gray-400">Category</span>
-                  </button>
-                ))}
-
-                {productSuggestions.map((p) => (
-                  <button
-                    key={p.id}
-                    type="button"
-                    onClick={() => goToProduct(p.id)}
-                    className="w-full flex items-center gap-3 px-4 py-2 text-sm text-left hover:bg-gray-50"
-                  >
-                    <img
-                      src={p.image}
-                      alt=""
-                      className="w-8 h-8 object-cover rounded"
-                    />
-                    <span className="flex-1 truncate">{p.name}</span>
-                    <span className="text-gray-500">₹{p.price}</span>
-                  </button>
-                ))}
-
-              </div>
-            )}
-          </div>
-        </form>
+        {/* Search: desktop-il mathram ivide */}
+        <div className="flex-1 max-w-xl hidden md:block">
+          {searchBox}
+        </div>
 
         {/* Icons */}
-        <div className="flex items-center gap-5 flex-shrink-0">
+        <div className="flex items-center gap-4 md:gap-5 flex-shrink-0">
 
           {/* wishlist */}
           <Link to="/wishlist" className="relative">
@@ -246,7 +237,7 @@ function Navbar() {
             </button>
 
             {showProfile && (
-              <div className="absolute right-0 mt-3 w-64 bg-white border border-gray-100 rounded-md shadow-lg p-5 z-50">
+              <div className="absolute right-0 mt-3 w-60 md:w-64 bg-white border border-gray-100 rounded-md shadow-lg p-5 z-50">
                 {user ? (
                   <div className="text-center">
                     <p className="text-xs text-gray-400 mb-1">Welcome</p>
@@ -304,11 +295,17 @@ function Navbar() {
         </div>
       </div>
 
-      {/* BOTTOM ROW: Nav Links */}
+      {/* MOBILE SEARCH ROW: mobile-il mathram, logo-inte thazhe */}
+      {/* Note: searchRef rendu idathu use cheyyunnathu kondu, mobile-um desktop-um orumichu kaanilla (CSS kondu ondu mathram visible) */}
+      <div className="md:hidden px-4 pb-3">
+        {searchBox}
+      </div>
+
+      {/* BOTTOM ROW: Nav Links (mobile-il side-lekku scroll cheyyam) */}
       <div className="bg-[#f3e8d8] border-t border-gray-200">
-        <ul className="flex items-center justify-center gap-8 list-none py-2.5">
+        <ul className="flex items-center md:justify-center gap-6 md:gap-8 list-none py-2.5 px-4 overflow-x-auto whitespace-nowrap">
           {navLinks.map(({ label, path }) => (
-            <li key={path}>
+            <li key={path} className="flex-shrink-0">
               <Link
                 to={path}
                 className="px-2 py-1 text-sm font-medium text-gray-700 hover:text-yellow-600 transition-all"

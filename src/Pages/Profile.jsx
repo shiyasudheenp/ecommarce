@@ -27,7 +27,7 @@ function Profile() {
   };
 
   return (
-    <div className="px-6 md:px-10 py-10 max-w-3xl mx-auto">
+        <div className="px-4 md:px-10 py-8 md:py-10 max-w-3xl mx-auto">
 
       {/* ACCOUNT INFO */}
       <div className="bg-white border border-gray-100 rounded-md shadow-sm p-6">
@@ -39,7 +39,7 @@ function Profile() {
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
               placeholder="Name"
-              className="border border-gray-200 rounded-md px-3 py-2 text-sm"
+              className="border border-gray-200 rounded-md px-3 py-2 text-base sm:text-sm"
             />
             <input
               value={form.email}

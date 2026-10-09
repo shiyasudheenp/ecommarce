@@ -9,20 +9,20 @@ function OrderSuccess() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto px-6 py-16 text-center">
-      <div className="text-green-500 text-6xl mb-4">✓</div>
-      <h1 className="text-3xl font-serif mb-2">Order Placed Successfully!</h1>
+      <div className="max-w-2xl mx-auto px-4 md:px-6 py-10 md:py-16 text-center">
+      <div className="text-green-500 text-5xl md:text-6xl mb-4">✓</div>
+      <h1 className="text-2xl md:text-3xl font-serif mb-2">Order Placed Successfully!</h1>
       <p className="text-gray-500 mb-8">Thank you for shopping with Shaa Jewels.</p>
 
       <div className="bg-white border border-gray-100 rounded-md shadow-sm text-left divide-y divide-gray-100 mb-8">
         {order.items.map((item) => (
-          <div key={item.id} className="flex items-center gap-4 p-4">
-            <img src={item.image} alt={item.name} className="w-16 h-16 object-cover rounded-md" />
+           <div key={item.id} className="flex items-center gap-3 md:gap-4 p-3 md:p-4">
+            <img src={item.image} alt={item.name} className="w-16 h-16 object-cover rounded-md flex-shrink-0" />
             <div className="flex-1">
               <p className="font-medium">{item.name}</p>
               <p className="text-gray-500 text-sm">Qty: {item.qty}</p>
             </div>
-            <p className="font-semibold">₹{item.price * item.qty}</p>
+              <p className="font-semibold whitespace-nowrap">₹{item.price * item.qty}</p>
           </div>
         ))}
         <div className="flex justify-between items-center p-4 font-bold text-lg">
@@ -31,7 +31,7 @@ function OrderSuccess() {
         </div>
       </div>
 
-      <div className="flex justify-center gap-4">
+         <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
         <Link to="/my-orders" className="inline-block border border-yellow-600 text-yellow-700 px-8 py-2.5 rounded-md font-medium transition-all">
           View My Orders
         </Link>
