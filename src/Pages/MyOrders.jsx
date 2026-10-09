@@ -57,16 +57,20 @@ function MyOrders() {
             </div>
 
             <div className="flex flex-col gap-3">
-              {order.items.map((item) => (
-                <div key={item.id} className="flex items-center gap-4">
-                  <img src={item.image} alt={item.name} className="w-14 h-14 object-cover rounded-md" />
-                  <div className="flex-1">
-                    <p className="font-medium">{item.name}</p>
-                    <p className="text-gray-500 text-sm">Qty: {item.qty}</p>
-                  </div>
-                  <p className="font-semibold text-sm">₹{item.price * item.qty}</p>
-                </div>
-              ))}
+             {order.items.map((item) => (
+  <Link
+    key={item.id}
+    to={`/product/${item.id}`}
+    className="flex items-center gap-4 hover:bg-gray-50 rounded-md transition cursor-pointer"
+  >
+    <img src={item.image} alt={item.name} className="w-14 h-14 object-cover rounded-md" />
+    <div className="flex-1">
+      <p className="font-medium">{item.name}</p>
+      <p className="text-gray-500 text-sm">Qty: {item.qty}</p>
+    </div>
+    <p className="font-semibold text-sm">₹{item.price * item.qty}</p>
+  </Link>
+))}
             </div>
 
             <div className="flex justify-between items-center mt-4 pt-4 border-t border-gray-100 font-bold">
@@ -81,3 +85,5 @@ function MyOrders() {
 }
 
 export default MyOrders;
+
+
