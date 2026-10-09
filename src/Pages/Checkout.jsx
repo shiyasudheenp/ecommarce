@@ -9,7 +9,7 @@ function Checkout() {
   const navigate = useNavigate();
   const { removeFromCart } = useContext(cartContext);
 
-  const items = location.state?.items;
+    const [items, setItems] = useState(location.state?.items);
 
   const [form, setForm] = useState({
     name: "", phone: "", pincode: "", city: "", address: "",
@@ -21,7 +21,17 @@ function Checkout() {
     return <Navigate to="/Shop" replace />;
   }
 
-  const total = items.reduce((sum, item) => sum + item.price * item.qty, 0);
+    const total = items.reduce((sum, item) => sum + item.price * item.qty, 0);
+
+  const changeQty = (id, delta) => {
+    setItems((prev) =>
+      prev.map((item) =>
+        item.id === id
+          ? { ...item, qty: Math.max(1, item.qty + delta) }
+          : item
+      )
+    );
+  };
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -76,7 +86,21 @@ function Checkout() {
             <div className="flex-1">
               <h2 className="font-semibold text-black-500">{item.name}</h2>
               <p className="text-yellow-600 font-bold mt-1">₹{item.price}</p>
-              <p className="text-gray-500 text-sm mt-1">Qty: {item.qty}</p>
+                            <div className="flex items-center gap-2 mt-2">
+                <button
+                  onClick={() => changeQty(item.id, -1)}
+                  className="w-7 h-7 rounded-md border border-gray-200 hover:bg-gray-100 text-lg leading-none"
+                >
+                  −
+                </button>
+                <span className="w-6 text-center text-sm">{item.qty}</span>
+                <button
+                  onClick={() => changeQty(item.id, 1)}
+                  className="w-7 h-7 rounded-md border border-gray-200 hover:bg-gray-100 text-lg leading-none"
+                >
+                  +
+                </button>
+              </div>
             </div>
              <p className="font-semibold whitespace-nowrap">₹{item.price * item.qty}</p>
           </div>

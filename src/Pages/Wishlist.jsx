@@ -5,7 +5,8 @@ import { cartContext } from "./CartProvider";
 
 function Wishlist() {
   const { wishlist, removeFromWishlist } = useContext(wishlistContext);
-  const { AddToCart } = useContext(cartContext);
+    const { cart, AddToCart, removeFromCart } = useContext(cartContext);
+   const isInCart = (id) => cart.some((c) => c.id === id);
 
   if (wishlist.length === 0) {
     return (
@@ -32,20 +33,38 @@ function Wishlist() {
             key={item.id}
             className="bg-white border border-gray-100 rounded-md shadow-sm overflow-hidden"
           >
-            <img
-              src={item.image}
-              alt={item.name}
-              className="w-full h-40 md:h-56 object-cover"
-            />
-              <div className="p-3 md:p-4">
-              <h2 className="font-semibold text-sm md:text-base">{item.name}</h2>
-              <p className="text-yellow-600 font-bold mt-1">₹{item.price}</p>
+             <Link to={`/product/${item.id}`}>
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full h-40 md:h-56 object-cover"
+              />
+            </Link>
+            <div className="p-3 md:p-4">
+              <Link to={`/product/${item.id}`}>
+                <h2 className="font-semibold text-sm md:text-base hover:text-yellow-600">{item.name}</h2>
+              </Link>
+                            <div className="flex items-baseline gap-2 mt-1">
+                <span className="text-base font-semibold text-black">₹{item.price}</span>
+                {item.oldPrice && (
+                  <span className="text-sm text-gray-400 line-through">₹{item.oldPrice}</span>
+                )}
+              </div>
+              <p className="text-xs text-green-600 font-medium mt-1">
+                ₹1,300 OFF/gm on 24KT Gold
+              </p>
               <div className="flex flex-col md:flex-row gap-2 mt-3">
                 <button
-                  onClick={() => AddToCart(item)}
-                  className="flex-1 bg-yellow-600 hover:bg-yellow-700 text-white py-2 rounded-md text-sm"
+                  onClick={() =>
+                    isInCart(item.id) ? removeFromCart(item.id) : AddToCart(item)
+                  }
+                  className={`flex-1 text-white py-2 rounded-md text-sm ${
+                    isInCart(item.id)
+                      ? "bg-green-600 hover:bg-green-700"
+                      : "bg-yellow-600 hover:bg-yellow-700"
+                  }`}
                 >
-                  Add To Cart
+                  {isInCart(item.id) ? "Added ✓" : "Add To Cart"}
                 </button>
                 <button
                   onClick={() => removeFromWishlist(item.id)}

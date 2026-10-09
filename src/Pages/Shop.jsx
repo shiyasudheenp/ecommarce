@@ -154,7 +154,8 @@ function Shop() {
             </Link>
 
                <div className="flex flex-col md:flex-row gap-2 md:gap-3 mt-3 md:mt-4">
-              {getQty(item.id) === 0 ? (
+         
+                 {getQty(item.id) === 0 ? (
                 <button
                   onClick={() => AddToCart(item)}
                   className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white py-2 rounded-md"
@@ -162,27 +163,12 @@ function Shop() {
                   Add To Cart
                 </button>
               ) : (
-                <div className="flex-1 flex items-center justify-between bg-yellow-500 text-white rounded-md px-3 py-2">
-                  <button
-                    onClick={() => {
-                      if (getQty(item.id) === 1) {
-                        removeFromCart(item.id);
-                      } else {
-                        updateQty(item.id, getQty(item.id) - 1);
-                      }
-                    }}
-                    className="px-2"
-                  >
-                    <FaMinus size={12} />
-                  </button>
-                  <span className="font-medium">{getQty(item.id)}</span>
-                  <button
-                    onClick={() => updateQty(item.id, getQty(item.id) + 1)}
-                    className="px-2"
-                  >
-                    <FaPlus size={12} />
-                  </button>
-                </div>
+                   <button
+                  onClick={() => removeFromCart(item.id)}
+                  className="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 rounded-md"
+                >
+                  Added ✓
+                </button>
               )}
 
               <button

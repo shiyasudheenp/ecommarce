@@ -20,6 +20,7 @@ import MyOrders from "./Pages/MyOrders"
 import Profile from "./Pages/Profile"
 import Signup from "./Pages/Signup"
 import ScrollToTop from "./Components/ScrollToTop"
+import ProtectedRoute from "./Components/ProtectedRoute";
 
 // Navbar/Footer ee routes-il kanikkaruthu
 const hideLayoutRoutes = ["/login", "/register", "/Signup"];
@@ -41,12 +42,12 @@ function Layout() {
         <Route path="/Collection" element={<Collection/>}/>
         <Route path="/About" element={<About/>}/>
         <Route path="/Footer" element={<Footer/>}/>
-        <Route path="/Cart" element={<Cart/>}/>
-        <Route path="/wishlist" element={<Wishlist/>}/>
-        <Route path="/checkout" element={<Checkout/>}/>
+        <Route path="/cart" element={<ProtectedRoute><Cart /></ProtectedRoute>} />
+        <Route path="/wishlist" element={<ProtectedRoute><Wishlist /></ProtectedRoute>} />
+        <Route path="/checkout" element={<ProtectedRoute><Checkout /></ProtectedRoute>} />
+        <Route path="/my-orders" element={<ProtectedRoute><MyOrders /></ProtectedRoute>} />
         <Route path="/product/:id" element={<ProductDetail/>}/>
         <Route path="/order-Success" element={<OrderSuccess/>}/>
-        <Route path="/my-orders" element={<MyOrders/>}/>
         <Route path="/Profile" element={<Profile/>}/>
         <Route path="/Signup" element={<Signup/>}/>
       </Routes>

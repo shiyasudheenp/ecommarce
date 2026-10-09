@@ -14,6 +14,7 @@ function Register() {
   }, [navigate])
 
     const[name,setName]=useState("")
+     const[phone,setPhone]=useState("")
     const[email,setEmail]=useState("")
     const[password,setPassword]=useState("")
     const[showpassword,setShowpaswword]=useState(false)
@@ -23,6 +24,11 @@ function Register() {
     const handleData = async (e) => {
 
 e.preventDefault();
+
+if (!/^[0-9]{10}$/.test(phone.trim())) {
+  alert("Enter a valid 10-digit phone number");
+  return;
+}
 
 try {
 const response = await axios.get(
@@ -42,6 +48,7 @@ if (existingUser) {
 const userData = {
   name,
   email,
+  phone: phone.trim(),
   password
 };
 
@@ -95,27 +102,36 @@ alert("Registration failed");
     placeholder="Enter Your Email"
     autocomplete="off"
     value={email}
-    onChange={(e) => setEmail(e.target.value)}
+        onChange={(e) => setEmail(e.target.value)}
     className="w-full p-3 rounded-lg mb-4 outline-none bg-white"
   />
 
   <input
-    type={showpassword ? "text":"password"}
-    name="Password"
-    placeholder="Enter Your Password"
-    autoComplete="new-password"
-    value={password}
-    onChange={(e) => setPassword(e.target.value)}
-    className="w-full p-3 rounded-lg mb-6 outline-none bg-white"
+    type="tel"
+    placeholder="Enter Your Phone Number"
+    value={phone}
+    maxLength={10}
+    onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))}
+    className="w-full p-3 rounded-lg mb-4 outline-none bg-white"
   />
-  <button
-    type="button"
-    onClick={()=> setShowpaswword (!showpassword)}
-    className="absolute right-12 top-70 -translate-y-1/2"
+   <div className="relative mb-6">
+    <input
+      type={showpassword ? "text":"password"}
+      name="Password"
+      placeholder="Enter Your Password"
+      autoComplete="new-password"
+      value={password}
+      onChange={(e) => setPassword(e.target.value)}
+      className="w-full p-3 pr-12 rounded-lg outline-none bg-white"
+    />
+    <button
+      type="button"
+      onClick={()=> setShowpaswword(!showpassword)}
+      className="absolute right-3 top-1/2 -translate-y-1/2"
     >
       {showpassword ? "👁️" : "🙈"}
     </button>
-
+  </div>
   <button
     onClick={handleData}
     className="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-3 rounded-lg font-semibold"

@@ -17,7 +17,7 @@ function ProductDetail() {
   const [activeTab, setActiveTab] = useState("details");
   const [activeImage, setActiveImage] = useState(0);
 
-  const { AddToCart } = useContext(cartContext);
+    const { cart, AddToCart, removeFromCart } = useContext(cartContext);
   const { toggleWishlist, isWishlisted } = useContext(wishlistContext);
 
   useEffect(() => {
@@ -56,7 +56,7 @@ function ProductDetail() {
       </div>
     );
   }
-
+const inCart = cart.some((c) => c.id === product.id);
   // Use the images array if it exists; otherwise fall back to the single image
   // const gallery =
   //   product.images && product.images.length > 0
@@ -180,17 +180,23 @@ function ProductDetail() {
           </div>
 
           <div className="flex gap-3 mb-6">
-            <button
-              onClick={() => AddToCart(product)}
-              className="flex-1 bg-yellow-600 hover:bg-yellow-700 text-white py-3 rounded-md font-medium text-sm md:text-base transition-all"
+           <button
+              onClick={() =>
+                inCart ? removeFromCart(product.id) : AddToCart(product)
+              }
+              className={`flex-1 text-white py-3 rounded-md font-medium text-sm md:text-base transition-all ${
+                inCart
+                  ? "bg-green-600 hover:bg-green-700"
+                  : "bg-yellow-600 hover:bg-yellow-700"
+              }`}
             >
-              Add To Cart
+              {inCart ? "Added ✓" : "Add To Cart"}
             </button>
             <button
-              onClick={() => {
+                onClick={() => {
                 const isLoggedIn = localStorage.getItem("user");
                 if (isLoggedIn) {
-                  setShowModal(true);
+                  navigate("/checkout", { state: { items: [{ ...product, qty }] } });
                 } else {
                   alert("Please login to continue!");
                   navigate("/login");

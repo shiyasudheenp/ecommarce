@@ -46,6 +46,7 @@ function Navbar() {
   const [allProducts, setAllProducts] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const searchRef = useRef(null);
+  const mobileSearchRef = useRef(null);
 
   useEffect(() => {
     axios
@@ -111,8 +112,10 @@ function Navbar() {
   };
 
   useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (searchRef.current && !searchRef.current.contains(e.target)) {
+       const handleClickOutside = (e) => {
+      const insideDesktop = searchRef.current && searchRef.current.contains(e.target);
+      const insideMobile = mobileSearchRef.current && mobileSearchRef.current.contains(e.target);
+      if (!insideDesktop && !insideMobile) {
         setShowSuggestions(false);
       }
     };
@@ -125,7 +128,7 @@ function Navbar() {
   const profileRef = useRef(null);
 
   useEffect(() => {
-    const handleClickOutside = (e) => {
+          const handleClickOutside = (e) => {
       if (profileRef.current && !profileRef.current.contains(e.target)) {
         setShowProfile(false);
       }
@@ -135,8 +138,9 @@ function Navbar() {
   }, []);
 
   // Search bar (desktop-lum mobile-lum ore code, athukondu oru variable aakki)
-  const searchBox = (
-    <form ref={searchRef} onSubmit={handlesearch} className="w-full">
+    const renderSearchBox = (refToUse) => (
+    <form ref={refToUse} onSubmit={handlesearch} className="w-full">
+    
       <div className="relative">
         <input
           type="text"
@@ -203,8 +207,8 @@ function Navbar() {
         </Link>
 
         {/* Search: desktop-il mathram ivide */}
-        <div className="flex-1 max-w-xl hidden md:block">
-          {searchBox}
+           <div className="flex-1 max-w-xl hidden md:block">
+          {renderSearchBox(searchRef)}
         </div>
 
         {/* Icons */}
@@ -297,8 +301,8 @@ function Navbar() {
 
       {/* MOBILE SEARCH ROW: mobile-il mathram, logo-inte thazhe */}
       {/* Note: searchRef rendu idathu use cheyyunnathu kondu, mobile-um desktop-um orumichu kaanilla (CSS kondu ondu mathram visible) */}
-      <div className="md:hidden px-4 pb-3">
-        {searchBox}
+            <div className="md:hidden px-4 pb-3">
+        {renderSearchBox(mobileSearchRef)}
       </div>
 
       {/* BOTTOM ROW: Nav Links (mobile-il side-lekku scroll cheyyam) */}

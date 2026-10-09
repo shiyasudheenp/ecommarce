@@ -44,18 +44,30 @@ function Cart() {
             key={item.id}
             className="flex flex-col sm:flex-row sm:items-center gap-4 bg-white border border-gray-100 rounded-md shadow-sm p-4"
           >
-                      <div className="flex items-center gap-4 sm:flex-1">
-              <img
-                src={item.image}
-                alt={item.name}
-                className="w-20 h-20 object-cover rounded-md flex-shrink-0"
-              />
+             <div className="flex items-center gap-4 sm:flex-1">
+              <Link to={`/product/${item.id}`} className="flex-shrink-0">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-20 h-20 object-cover rounded-md"
+                />
+              </Link>
 
               <div className="flex-1">
-                <h2 className="font-semibold text-black-500">{item.name}</h2>
-                <p className="text-yellow-600 font-bold mt-1">₹{item.price}</p>
+                <Link to={`/product/${item.id}`}>
+                  <h2 className="font-semibold text-black-500 hover:text-yellow-600">{item.name}</h2>
+                </Link>
+                    <div className="flex items-baseline gap-2 mt-1">
+                  <span className="text-base font-semibold text-black">₹{item.price}</span>
+                  {item.oldPrice && (
+                    <span className="text-sm text-gray-400 line-through">₹{item.oldPrice}</span>
+                  )}
+                </div>
+                <p className="text-xs text-green-600 font-medium mt-1">
+                  ₹1,300 OFF/gm on 24KT Gold
+                </p>
               </div>
-            </div>
+            </div> 
 
              <div className="flex items-center justify-between sm:justify-start gap-3">
               <button

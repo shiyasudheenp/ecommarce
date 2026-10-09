@@ -1,10 +1,20 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState ,useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
 
 export const cartContext = createContext()
 
 function CartProvider({ children }) {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+  try {
+    return JSON.parse(localStorage.getItem("cart") || "[]");
+  } catch {
+    return [];
+  }
+});
+
+useEffect(() => {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}, [cart]);
   const navigate = useNavigate();
 
   const AddToCart = (product) => {

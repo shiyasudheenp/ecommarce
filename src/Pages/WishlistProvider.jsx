@@ -1,10 +1,21 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 export const wishlistContext = createContext()
 
 function WishlistProvider({ children }) {
-  const [wishlist, setWishlist] = useState([]);
+  const [wishlist, setWishlist] = useState(() => {
+  try {
+    return JSON.parse(localStorage.getItem("wishlist") || "[]");
+  } catch {
+    return [];
+  }
+});
+
+useEffect(() => {
+  localStorage.setItem("wishlist", JSON.stringify(wishlist));
+}, [wishlist]);
+
   const navigate = useNavigate();
 
   const toggleWishlist = (product) => {
