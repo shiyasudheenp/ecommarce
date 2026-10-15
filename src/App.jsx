@@ -19,15 +19,23 @@ import OrderSuccess from "./Pages/OrderSuccess"
 import MyOrders from "./Pages/MyOrders"
 import Profile from "./Pages/Profile"
 import Signup from "./Pages/Signup"
+import NewArrivals from "./Pages/NewArrivals"
 import ScrollToTop from "./Components/ScrollToTop"
-import ProtectedRoute from "./Components/ProtectedRoute";
+import AdminRoute from "./Admin/AdminRoute";
+import AdminLayout from "./Admin/AdminLayout";
+import Dashboard from "./Admin/Dashboard";
+import AdminProducts from "./Admin/AdminProducts";
+import AdminOrders from "./Admin/AdminOrders";
+import AdminUsers from "./Admin/AdminUsers";
 
 // Navbar/Footer ee routes-il kanikkaruthu
 const hideLayoutRoutes = ["/login", "/register", "/Signup"];
 
 function Layout() {
   const location = useLocation();
-  const hideLayout = hideLayoutRoutes.includes(location.pathname);
+    const hideLayout =
+    hideLayoutRoutes.includes(location.pathname) ||
+    location.pathname.startsWith("/admin");
 
   return (
     <>
@@ -42,14 +50,28 @@ function Layout() {
         <Route path="/Collection" element={<Collection/>}/>
         <Route path="/About" element={<About/>}/>
         <Route path="/Footer" element={<Footer/>}/>
-        <Route path="/cart" element={<ProtectedRoute><Cart /></ProtectedRoute>} />
-        <Route path="/wishlist" element={<ProtectedRoute><Wishlist /></ProtectedRoute>} />
-        <Route path="/checkout" element={<ProtectedRoute><Checkout /></ProtectedRoute>} />
-        <Route path="/my-orders" element={<ProtectedRoute><MyOrders /></ProtectedRoute>} />
+        <Route path="/Cart" element={<Cart/>}/>
+        <Route path="/wishlist" element={<Wishlist/>}/>
+        <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/product/:id" element={<ProductDetail/>}/>
         <Route path="/order-Success" element={<OrderSuccess/>}/>
+        <Route path="/my-orders" element={<MyOrders/>}/>
         <Route path="/Profile" element={<Profile/>}/>
         <Route path="/Signup" element={<Signup/>}/>
+        <Route path="/NewArrivals" element={<NewArrivals/>}/>
+        <Route
+          path="/admin"
+          element={
+             <AdminRoute>
+               <AdminLayout />
+              </AdminRoute>
+  }
+>
+    <Route index element={<Dashboard />} />
+    <Route path="products" element={<AdminProducts />} />
+    <Route path="orders" element={<AdminOrders />} />
+    <Route path="users" element={<AdminUsers />} />
+</Route>
       </Routes>
       {!hideLayout && <Footer/>}
     </>

@@ -33,6 +33,7 @@ function Login() {
 
       if(existingUser){
         localStorage.setItem("user",true)
+        localStorage.setItem("role", existingUser.role || "user")
         // Account Information page-il kaanikkan vendi profile save cheyyunnu
         localStorage.setItem(
           "profile",
@@ -42,9 +43,13 @@ function Login() {
             phone: existingUser.phone || "",
           })
         )
-        alert("Login successful")
+         alert("Login successful")
 
-        navigate("/", { replace: true })
+        if (existingUser.role === "admin") {
+          navigate("/admin", { replace: true })
+        } else {
+          navigate("/", { replace: true })
+        }
       }else{
         alert("invalid email or password")
       }

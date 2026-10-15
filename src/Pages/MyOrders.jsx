@@ -51,7 +51,17 @@ function MyOrders() {
                   })}
                 </p>
               </div>
-              <span className="text-xs font-medium bg-green-50 text-green-700 px-3 py-1 rounded-full">
+               <span
+                className={`text-xs font-medium px-3 py-1 rounded-full ${
+                  order.status === "Shipped"
+                    ? "bg-blue-50 text-blue-700"
+                    : order.status === "Cancelled"
+                    ? "bg-red-50 text-red-600"
+                    : order.status === "Delivered"
+                    ? "bg-green-50 text-green-700"
+                    : "bg-yellow-50 text-yellow-700"
+                }`}
+              >
                 {order.status || "Placed"}
               </span>
             </div>

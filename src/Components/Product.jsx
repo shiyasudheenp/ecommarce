@@ -4,12 +4,12 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { cartContext } from "../Pages/CartProvider";
 import { wishlistContext } from "../Pages/WishlistProvider";
-import { FaHeart, FaMinus, FaPlus } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Products() {
   const [products, setProducts] = useState([]);
-  const { cart, AddToCart, updateQty, removeFromCart } = useContext(cartContext);
+    const { cart, AddToCart, removeFromCart } = useContext(cartContext);
   const { toggleWishlist, isWishlisted } = useContext(wishlistContext);
   const navigate = useNavigate();
 
@@ -32,9 +32,9 @@ function Products() {
         <div className="px-4 md:px-10 py-8 md:py-10">
       <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">Trending Products</h2>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
         {products.map((item) => (
-                    <div key={item.id} className="relative rounded-lg p-2.5 md:p-4 shadow-md">
+          <div key={item.id} className="relative rounded-lg p-2.5 md:p-4 shadow-md">
 
             <button
               onClick={() => toggleWishlist(item)}
@@ -47,7 +47,7 @@ function Products() {
               <img
                 src={item.image}
                 alt={item.name}
-                                className="w-full h-40 md:h-56 object-cover rounded-md"
+                className="w-full h-40 md:h-56 object-cover rounded-md"
               />
               <div className="mt-3">
                 <div className="flex items-baseline gap-2">
@@ -56,15 +56,15 @@ function Products() {
                     <span className="text-sm text-gray-400 line-through">₹{item.oldPrice}</span>
                   )}
                 </div>
-                               <p className="text-sm text-gray-700 mt-1">{item.name}</p>
+                    <p className="text-sm text-gray-700 mt-1">{item.name}</p>
                 <p className="text-xs text-green-600 font-medium mt-1">
                   ₹1,300 OFF/gm on 24KT Gold
                 </p>
               </div>
             </Link>
 
-              <div className="flex flex-col md:flex-row gap-2 md:gap-3 mt-3 md:mt-4">
-                {getQty(item.id) === 0 ? (
+            <div className="flex flex-col md:flex-row gap-2 md:gap-3 mt-3 md:mt-4">
+              {getQty(item.id) === 0 ? (
                 <button
                   onClick={() => AddToCart(item)}
                   className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white py-2 rounded-md"
@@ -72,7 +72,7 @@ function Products() {
                   Add To Cart
                 </button>
               ) : (
-                <button
+                  <button
                   onClick={() => removeFromCart(item.id)}
                   className="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 rounded-md"
                 >

@@ -85,7 +85,15 @@ function Checkout() {
             <img src={item.image} alt={item.name} className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-md flex-shrink-0" />
             <div className="flex-1">
               <h2 className="font-semibold text-black-500">{item.name}</h2>
-              <p className="text-yellow-600 font-bold mt-1">₹{item.price}</p>
+               <div className="flex items-baseline gap-2 mt-1">
+                <span className="text-base font-semibold text-black">₹{item.price}</span>
+                {item.oldPrice && (
+                  <span className="text-sm text-gray-400 line-through">₹{item.oldPrice}</span>
+                )}
+              </div>
+              <p className="text-xs text-green-600 font-medium mt-1">
+                ₹1,300 OFF/gm on 24KT Gold
+              </p>
                             <div className="flex items-center gap-2 mt-2">
                 <button
                   onClick={() => changeQty(item.id, -1)}

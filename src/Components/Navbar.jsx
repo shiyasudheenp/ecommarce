@@ -35,6 +35,7 @@ function Navbar() {
   const handleLogout = () => {
     localStorage.removeItem("user");
     localStorage.removeItem("profile");
+    localStorage.removeItem("role");
     setUser(null);
     setShowProfile(false);
     alert("Logout successful");

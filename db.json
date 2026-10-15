@@ -1,29 +1,25 @@
 {
   "users": [
     {
-      "name": "vijay",
-      "email": "vijay123@gmail.com",
-      "password": "12345",
-      "id": "ptcrkbZfo6c"
-    },
-    {
-      "name": "shiyasu",
-      "email": "shiyas234@gmail.com",
-      "password": "098765",
-      "id": "HDbIASzSP5U"
-    },
-    {
-      "name": "sri",
-      "email": "sri1234@gmail.com",
-      "password": "123456789",
-      "id": "AqUJJ5KMhNY"
-    },
-    {
       "name": "mala",
       "email": "mala1212@gmail.com",
       "phone": "9567683370",
       "password": "1234567890",
       "id": "IkL4JO_9Kbk"
+    },
+    {
+      "name": "shiyas",
+      "email": "shiyas567@gmail.com",
+      "phone": "9567683370",
+      "password": "0987654321",
+      "id": "_-PzmGDwk_4"
+    },
+    {
+      "id": "admin1",
+      "name": "Admin",
+      "email": "admin@shaajewels.com",
+      "password": "admin123",
+      "role": "admin"
     }
   ],
   "orders": [
@@ -973,7 +969,9 @@
         "/an7-1.webp"
       ],
       "description": "Beautiful traditional gold necklace",
-      "stock": 10
+      "stock": 10,
+      "isNew": false,
+      "trending": false
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
